@@ -19,7 +19,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class CreateReviewRequest {
 
-    @NotNull(message = "Product ID is required")
+    // Note: productId is set from path variable in controller, not from request body
     private UUID productId;
 
     @NotNull(message = "Rating is required")

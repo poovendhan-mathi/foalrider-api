@@ -1,0 +1,48 @@
+# Test application properties for unit testing
+spring:
+  profiles:
+    active: test
+
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+
+  flyway:
+    enabled: false
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  mail:
+    host: localhost
+    port: 1025
+    username: test
+    password: test
+
+# JWT Configuration
+jwt:
+  secret: test-secret-key-for-unit-testing-purposes-only-must-be-at-least-256-bits
+  access-token-expiration: 3600000
+  refresh-token-expiration: 604800000
+
+# Stripe Configuration (test keys)
+stripe:
+  api-key: sk_test_dummy_key_for_testing
+  webhook-secret: whsec_test_dummy_secret
+
+# Logging
+logging:
+  level:
+    root: WARN
+    com.foalrider: DEBUG
+    org.springframework.security: DEBUG
