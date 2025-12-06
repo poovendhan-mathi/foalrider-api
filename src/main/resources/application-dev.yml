@@ -1,0 +1,63 @@
+# ===========================================
+# Development Profile Configuration
+# ===========================================
+
+spring:
+  # Database - Supabase PostgreSQL (Dev Environment)
+  datasource:
+    url: jdbc:postgresql://db.gpysvrwyttfichbatxlc.supabase.co:5432/postgres
+    username: postgres
+    password: POOven0708
+
+  # JPA - Show SQL for debugging
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update # Use 'update' for dev to auto-create tables
+
+  # Flyway - disabled for initial testing (enable later)
+  flyway:
+    enabled: false
+    clean-disabled: false
+
+  # Redis - Disabled for initial testing
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
+      - org.springframework.boot.autoconfigure.data.redis.RedisRepositoriesAutoConfiguration
+
+# Server
+server:
+  port: 8080
+
+# Logging - More verbose for development
+logging:
+  level:
+    root: INFO
+    com.foalrider: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE
+
+# Swagger enabled
+springdoc:
+  swagger-ui:
+    enabled: true
+
+# JWT Configuration
+jwt:
+  secret: ${JWT_SECRET:uSaJqnNtZTlnZr9K8lm8PcPPg06sMJ9YJ1UrqG1mtSPAueaWyRasB1tggKyu0XrMY7KZTDVUtgbSE0SmUhlBQw==}
+  access-token-expiration: 3600000 # 1 hour for dev convenience
+
+# Stripe Configuration (Test Mode)
+# Set these environment variables:
+# export STRIPE_API_KEY=sk_test_xxx
+# export STRIPE_WEBHOOK_SECRET=whsec_xxx
+stripe:
+  api-key: ${STRIPE_API_KEY:sk_test_placeholder}
+  webhook-secret: ${STRIPE_WEBHOOK_SECRET:whsec_placeholder}
+
+# App
+app:
+  cors:
+    allowed-origins: http://localhost:3000,http://localhost:5173,http://localhost:8080
