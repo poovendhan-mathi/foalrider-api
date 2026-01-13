@@ -1,9 +1,8 @@
 package com.foalrider.modules.auth.service;
 
-import com.foalrider.modules.auth.dto.AuthResponse;
-import com.foalrider.modules.auth.dto.LoginRequest;
-import com.foalrider.modules.auth.dto.RefreshTokenRequest;
-import com.foalrider.modules.auth.dto.RegisterRequest;
+import com.foalrider.modules.auth.dto.*;
+import com.foalrider.modules.notification.service.EmailService;
+import com.foalrider.modules.user.dto.ChangePasswordRequest;
 import com.foalrider.modules.user.entity.RefreshToken;
 import com.foalrider.modules.user.entity.Role;
 import com.foalrider.modules.user.entity.User;
@@ -30,7 +29,9 @@ import org.springframework.transaction.annotation.Transactional;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import java.time.Instant;
+import java.time.temporal.ChronoUnit;
 import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
@@ -50,6 +51,10 @@ public class AuthServiceImpl implements AuthService {
     private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;
     private final JwtTokenProvider jwtTokenProvider;
+    private final EmailService emailService;
+    
+    private static final int PASSWORD_RESET_TOKEN_EXPIRY_HOURS = 1;
+    private static final int EMAIL_VERIFICATION_TOKEN_EXPIRY_HOURS = 24;
 
     @Override
     @Transactional
@@ -167,6 +172,148 @@ public class AuthServiceImpl implements AuthService {
         UUID userId = SecurityUtils.requireCurrentUserId();
         refreshTokenRepository.revokeAllByUserId(userId, Instant.now());
         log.info("User logged out from all devices: {}", userId);
+    }
+
+    @Override
+    @Transactional
+    public void forgotPassword(ForgotPasswordRequest request) {
+        String email = request.getEmail().toLowerCase();
+        
+        userRepository.findByEmail(email).ifPresent(user -> {
+            // Generate reset token
+            String resetToken = generateSecureToken();
+            
+            // Save token to user
+            user.setPasswordResetToken(hashToken(resetToken));
+            user.setPasswordResetTokenExpiresAt(Instant.now().plus(PASSWORD_RESET_TOKEN_EXPIRY_HOURS, ChronoUnit.HOURS));
+            userRepository.save(user);
+            
+            // Send email
+            emailService.sendPasswordResetEmail(user.getEmail(), user.getFirstName(), resetToken);
+            log.info("Password reset email sent to: {}", email);
+        });
+        
+        // Always return success to prevent email enumeration
+        log.info("Forgot password requested for: {}", email);
+    }
+
+    @Override
+    @Transactional
+    public void resetPassword(ResetPasswordRequest request) {
+        // Validate passwords match
+        if (!request.getNewPassword().equals(request.getConfirmPassword())) {
+            throw new BadRequestException("Passwords do not match");
+        }
+        
+        String tokenHash = hashToken(request.getToken());
+        
+        User user = userRepository.findByPasswordResetToken(tokenHash)
+                .orElseThrow(() -> new BadRequestException("Invalid or expired reset token"));
+        
+        // Check if token is expired
+        if (user.getPasswordResetTokenExpiresAt() == null || 
+            user.getPasswordResetTokenExpiresAt().isBefore(Instant.now())) {
+            throw new BadRequestException("Reset token has expired");
+        }
+        
+        // Update password
+        user.setPasswordHash(passwordEncoder.encode(request.getNewPassword()));
+        user.setPasswordResetToken(null);
+        user.setPasswordResetTokenExpiresAt(null);
+        userRepository.save(user);
+        
+        // Revoke all refresh tokens for security
+        refreshTokenRepository.revokeAllByUserId(user.getId(), Instant.now());
+        
+        log.info("Password reset successful for user: {}", user.getEmail());
+    }
+
+    @Override
+    @Transactional
+    public void changePassword(ChangePasswordRequest request) {
+        // Validate passwords match
+        if (!request.getNewPassword().equals(request.getConfirmPassword())) {
+            throw new BadRequestException("Passwords do not match");
+        }
+        
+        UUID userId = SecurityUtils.requireCurrentUserId();
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new ResourceNotFoundException("User not found"));
+        
+        // Verify current password
+        if (!passwordEncoder.matches(request.getCurrentPassword(), user.getPasswordHash())) {
+            throw new BadRequestException("Current password is incorrect");
+        }
+        
+        // Check if new password is same as current
+        if (passwordEncoder.matches(request.getNewPassword(), user.getPasswordHash())) {
+            throw new BadRequestException("New password must be different from current password");
+        }
+        
+        // Update password
+        user.setPasswordHash(passwordEncoder.encode(request.getNewPassword()));
+        userRepository.save(user);
+        
+        log.info("Password changed for user: {}", user.getEmail());
+    }
+
+    @Override
+    @Transactional
+    public void verifyEmail(VerifyEmailRequest request) {
+        String tokenHash = hashToken(request.getToken());
+        
+        User user = userRepository.findByEmailVerificationToken(tokenHash)
+                .orElseThrow(() -> new BadRequestException("Invalid or expired verification token"));
+        
+        // Check if token is expired
+        if (user.getEmailVerificationTokenExpiresAt() == null || 
+            user.getEmailVerificationTokenExpiresAt().isBefore(Instant.now())) {
+            throw new BadRequestException("Verification token has expired");
+        }
+        
+        // Mark email as verified
+        user.setIsEmailVerified(true);
+        user.setEmailVerificationToken(null);
+        user.setEmailVerificationTokenExpiresAt(null);
+        userRepository.save(user);
+        
+        // Send welcome email
+        emailService.sendWelcomeEmail(user.getEmail(), user.getFirstName());
+        
+        log.info("Email verified for user: {}", user.getEmail());
+    }
+
+    @Override
+    @Transactional
+    public void resendVerificationEmail() {
+        UUID userId = SecurityUtils.requireCurrentUserId();
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new ResourceNotFoundException("User not found"));
+        
+        if (user.getIsEmailVerified()) {
+            throw new BadRequestException("Email is already verified");
+        }
+        
+        // Generate new verification token
+        String verificationToken = generateSecureToken();
+        user.setEmailVerificationToken(hashToken(verificationToken));
+        user.setEmailVerificationTokenExpiresAt(Instant.now().plus(EMAIL_VERIFICATION_TOKEN_EXPIRY_HOURS, ChronoUnit.HOURS));
+        userRepository.save(user);
+        
+        // Send email
+        emailService.sendVerificationEmail(user.getEmail(), user.getFirstName(), verificationToken);
+        
+        log.info("Verification email resent to: {}", user.getEmail());
+    }
+
+    /**
+     * Generate a secure random token.
+     */
+    private String generateSecureToken() {
+        SecureRandom random = new SecureRandom();
+        byte[] bytes = new byte[32];
+        random.nextBytes(bytes);
+        return Base64.getUrlEncoder().withoutPadding().encodeToString(bytes);
     }
 
     /**

@@ -1,9 +1,7 @@
 package com.foalrider.modules.auth.service;
 
-import com.foalrider.modules.auth.dto.AuthResponse;
-import com.foalrider.modules.auth.dto.LoginRequest;
-import com.foalrider.modules.auth.dto.RefreshTokenRequest;
-import com.foalrider.modules.auth.dto.RegisterRequest;
+import com.foalrider.modules.auth.dto.*;
+import com.foalrider.modules.user.dto.ChangePasswordRequest;
 import jakarta.servlet.http.HttpServletRequest;
 
 /**
@@ -35,4 +33,29 @@ public interface AuthService {
      * Logout from all devices (revoke all refresh tokens).
      */
     void logoutAll();
+
+    /**
+     * Initiate forgot password flow - sends reset email.
+     */
+    void forgotPassword(ForgotPasswordRequest request);
+
+    /**
+     * Reset password using token from email.
+     */
+    void resetPassword(ResetPasswordRequest request);
+
+    /**
+     * Change password for authenticated user.
+     */
+    void changePassword(ChangePasswordRequest request);
+
+    /**
+     * Verify user email using token.
+     */
+    void verifyEmail(VerifyEmailRequest request);
+
+    /**
+     * Resend email verification link.
+     */
+    void resendVerificationEmail();
 }

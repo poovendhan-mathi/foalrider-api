@@ -99,6 +99,14 @@ stripe:
   currency: ${STRIPE_CURRENCY:usd}
 
 # ===========================================
+# Cloudinary Configuration
+# ===========================================
+cloudinary:
+  cloud-name: ${CLOUDINARY_CLOUD_NAME:}
+  api-key: ${CLOUDINARY_API_KEY:}
+  api-secret: ${CLOUDINARY_API_SECRET:}
+
+# ===========================================
 # OpenAPI / Swagger Configuration
 # ===========================================
 springdoc:
@@ -144,6 +152,14 @@ logging:
 # App Custom Configuration
 # ===========================================
 app:
+  name: FoalRider
+  frontend-url: ${FRONTEND_URL:http://localhost:3000}
+
+  company:
+    address: ${COMPANY_ADDRESS:123 Fashion Street, New York, NY 10001}
+    email: ${COMPANY_EMAIL:support@foalrider.com}
+    phone: ${COMPANY_PHONE:+1 (555) 123-4567}
+
   cors:
     allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:3000,http://localhost:5173}
     allowed-methods: GET,POST,PUT,PATCH,DELETE,OPTIONS

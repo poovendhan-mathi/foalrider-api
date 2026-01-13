@@ -26,6 +26,8 @@
         <springdoc.version>2.3.0</springdoc.version>
         <stripe.version>24.0.0</stripe.version>
         <flyway.version>9.22.3</flyway.version>
+        <itext.version>8.0.2</itext.version>
+        <cloudinary.version>1.36.0</cloudinary.version>
     </properties>
 
     <dependencies>
@@ -111,6 +113,21 @@
             <groupId>com.stripe</groupId>
             <artifactId>stripe-java</artifactId>
             <version>${stripe.version}</version>
+        </dependency>
+
+        <!-- PDF Generation (iText) -->
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itext-core</artifactId>
+            <version>${itext.version}</version>
+            <type>pom</type>
+        </dependency>
+
+        <!-- Cloudinary for Image Upload -->
+        <dependency>
+            <groupId>com.cloudinary</groupId>
+            <artifactId>cloudinary-http45</artifactId>
+            <version>${cloudinary.version}</version>
         </dependency>
 
         <!-- MapStruct for DTO Mapping -->

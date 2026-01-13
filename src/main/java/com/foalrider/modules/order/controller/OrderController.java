@@ -2,6 +2,7 @@ package com.foalrider.modules.order.controller;
 
 import com.foalrider.modules.order.dto.*;
 import com.foalrider.modules.order.entity.OrderStatus;
+import com.foalrider.modules.order.service.InvoiceService;
 import com.foalrider.modules.order.service.OrderService;
 import com.foalrider.shared.dto.ApiResponse;
 import io.swagger.v3.oas.annotations.Operation;
@@ -12,6 +13,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -25,6 +28,7 @@ import java.util.UUID;
 public class OrderController {
 
     private final OrderService orderService;
+    private final InvoiceService invoiceService;
 
     // Customer endpoints
 
@@ -81,6 +85,38 @@ public class OrderController {
         return ResponseEntity.ok(ApiResponse.success(order, "Order cancelled successfully"));
     }
 
+    @GetMapping("/my/{orderId}/invoice")
+    @PreAuthorize("isAuthenticated()")
+    @Operation(summary = "Download order invoice as PDF")
+    public ResponseEntity<byte[]> downloadInvoice(@PathVariable UUID orderId) {
+        // Verify the order belongs to the current user first
+        orderService.getOrderById(orderId);
+        byte[] pdfBytes = invoiceService.generateInvoiceById(orderId);
+        
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_PDF);
+        headers.setContentDispositionFormData("attachment", "invoice-" + orderId + ".pdf");
+        headers.setContentLength(pdfBytes.length);
+        
+        return ResponseEntity.ok().headers(headers).body(pdfBytes);
+    }
+
+    @GetMapping("/my/number/{orderNumber}/invoice")
+    @PreAuthorize("isAuthenticated()")
+    @Operation(summary = "Download order invoice by order number")
+    public ResponseEntity<byte[]> downloadInvoiceByOrderNumber(@PathVariable String orderNumber) {
+        // Verify the order belongs to the current user first
+        orderService.getOrderByOrderNumber(orderNumber);
+        byte[] pdfBytes = invoiceService.generateInvoiceByOrderNumber(orderNumber);
+        
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_PDF);
+        headers.setContentDispositionFormData("attachment", "invoice-" + orderNumber + ".pdf");
+        headers.setContentLength(pdfBytes.length);
+        
+        return ResponseEntity.ok().headers(headers).body(pdfBytes);
+    }
+
     // Admin endpoints
 
     @GetMapping
@@ -128,5 +164,19 @@ public class OrderController {
             @RequestBody String note) {
         OrderResponse order = orderService.addAdminNote(orderId, note);
         return ResponseEntity.ok(ApiResponse.success(order, "Note added successfully"));
+    }
+
+    @GetMapping("/{orderId}/invoice")
+    @PreAuthorize("hasRole('ADMIN')")
+    @Operation(summary = "Download order invoice as PDF (admin)")
+    public ResponseEntity<byte[]> downloadInvoiceAdmin(@PathVariable UUID orderId) {
+        byte[] pdfBytes = invoiceService.generateInvoiceById(orderId);
+        
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_PDF);
+        headers.setContentDispositionFormData("attachment", "invoice-" + orderId + ".pdf");
+        headers.setContentLength(pdfBytes.length);
+        
+        return ResponseEntity.ok().headers(headers).body(pdfBytes);
     }
 }
