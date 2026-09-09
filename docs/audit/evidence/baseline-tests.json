@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-09",
+  "baseline_commit": "4f5cd0044b6e3872accdd96f5dade7ffd1e476bd",
+  "java": "Oracle 21.0.5",
+  "maven": "3.9.9",
+  "original_run": {
+    "tests": 138,
+    "failures": 0,
+    "errors": 137,
+    "skipped": 1,
+    "cause": "Mockito inline runtime self-attachment unavailable in environment"
+  },
+  "startup_agent_run": {
+    "tests": 138,
+    "passed": 137,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 1,
+    "agent": "net.bytebuddy:byte-buddy-agent:1.14.10"
+  },
+  "note": "No production boot attempted; repository baseline tests use mocks; application context test disabled."
+}

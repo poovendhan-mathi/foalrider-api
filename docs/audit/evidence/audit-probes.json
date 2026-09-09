@@ -1,0 +1,214 @@
+{
+  "date": "2026-09-09",
+  "command": "mvn -o -Dtest='*AuditProbe' test (Java 21; startup Byte Buddy agent)",
+  "note": "Desired-security assertions. Failures are open defects. Mocked persistence, no live provider calls.",
+  "suites": [
+    {
+      "suite": "com.foalrider.audit.CommerceIntegrityAuditProbe",
+      "tests": 16,
+      "failures": 12,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "checkoutMustRequireVariantForVariantManagedProduct",
+          "result": "FAIL"
+        },
+        {
+          "name": "signedMatchingSuccessCanMarkOrderPaid",
+          "result": "PASS"
+        },
+        {
+          "name": "customerCannotReadAnotherCustomersOrder",
+          "result": "PASS"
+        },
+        {
+          "name": "publicReviewLookupMustHidePendingContent",
+          "result": "FAIL"
+        },
+        {
+          "name": "inclusiveTaxMustNotBeAddedTwice",
+          "result": "FAIL"
+        },
+        {
+          "name": "webhookMustNotReopenCancelledOrder",
+          "result": "FAIL"
+        },
+        {
+          "name": "oldIntentMustNotPayCurrentOrder",
+          "result": "FAIL"
+        },
+        {
+          "name": "duplicateSuccessDoesNotRepeatStatusHistory",
+          "result": "PASS"
+        },
+        {
+          "name": "variantStockShortageRejectsCheckout",
+          "result": "PASS"
+        },
+        {
+          "name": "webhookStorageFailureMustPropagateForRetry",
+          "result": "FAIL"
+        },
+        {
+          "name": "adminStatusEditMustNotInventRefundWithoutProviderOperation",
+          "result": "FAIL"
+        },
+        {
+          "name": "wrongCurrencyMustNotPayOrder",
+          "result": "FAIL"
+        },
+        {
+          "name": "inactiveProductMustBeRejectedAtCheckout",
+          "result": "FAIL"
+        },
+        {
+          "name": "insufficientAmountMustNotPayOrder",
+          "result": "FAIL"
+        },
+        {
+          "name": "delayedFailureMustNotUndoSuccessfulPayment",
+          "result": "FAIL"
+        },
+        {
+          "name": "checkoutMustRepriceOrRejectStaleCartPrice",
+          "result": "FAIL"
+        }
+      ]
+    },
+    {
+      "suite": "com.foalrider.audit.IdentityAndValidationAuditProbe",
+      "tests": 9,
+      "failures": 6,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "bcryptMustNotAcceptDifferentSuffixBeyond72Bytes",
+          "result": "FAIL"
+        },
+        {
+          "name": "billingAddressValidationMustCascade",
+          "result": "FAIL"
+        },
+        {
+          "name": "passwordChangeMustRevokeRefreshSessions",
+          "result": "FAIL"
+        },
+        {
+          "name": "oversizedCartQuantityMustFailValidation",
+          "result": "FAIL"
+        },
+        {
+          "name": "registrationMustSendInitialVerification",
+          "result": "FAIL"
+        },
+        {
+          "name": "passwordResetRevokesRefreshSessionsAndConsumesResetToken",
+          "result": "PASS"
+        },
+        {
+          "name": "zeroCartQuantityIsRejected",
+          "result": "PASS"
+        },
+        {
+          "name": "reviewImageValidationMustCascade",
+          "result": "FAIL"
+        },
+        {
+          "name": "expiredPasswordResetTokenIsRejected",
+          "result": "PASS"
+        }
+      ]
+    },
+    {
+      "suite": "com.foalrider.audit.SecurityBoundaryAuditProbe",
+      "tests": 20,
+      "failures": 11,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "wrongSignatureIsRejected",
+          "result": "PASS"
+        },
+        {
+          "name": "wrongIssuerMustBeRejected",
+          "result": "FAIL"
+        },
+        {
+          "name": "unpaidIntentMustNotBecomePaidByClientAssertion",
+          "result": "FAIL"
+        },
+        {
+          "name": "malformedOrUnsignedJwtIsRejected(String)[1]",
+          "result": "PASS"
+        },
+        {
+          "name": "malformedOrUnsignedJwtIsRejected(String)[2]",
+          "result": "PASS"
+        },
+        {
+          "name": "malformedOrUnsignedJwtIsRejected(String)[3]",
+          "result": "PASS"
+        },
+        {
+          "name": "validCustomerTokenCanReachAuthenticatedEndpoint",
+          "result": "PASS"
+        },
+        {
+          "name": "anonymousPaymentConfirmationIsRejected",
+          "result": "PASS"
+        },
+        {
+          "name": "customerMustNotConfirmAnotherCustomersPayment",
+          "result": "FAIL"
+        },
+        {
+          "name": "confirmationMustNotReopenTerminalOrFulfilledOrder(String)[1]",
+          "result": "FAIL"
+        },
+        {
+          "name": "confirmationMustNotReopenTerminalOrFulfilledOrder(String)[2]",
+          "result": "FAIL"
+        },
+        {
+          "name": "confirmationMustNotReopenTerminalOrFulfilledOrder(String)[3]",
+          "result": "FAIL"
+        },
+        {
+          "name": "deactivatedUserMustNotAuthenticateWithPreviouslyIssuedJwt",
+          "result": "FAIL"
+        },
+        {
+          "name": "malformedJsonMustReturn400",
+          "result": "FAIL"
+        },
+        {
+          "name": "missingExpirationMustBeRejected",
+          "result": "FAIL"
+        },
+        {
+          "name": "missingWebhookSignatureIsRejected",
+          "result": "FAIL"
+        },
+        {
+          "name": "invalidWebhookSignatureIsRejected",
+          "result": "PASS"
+        },
+        {
+          "name": "expiredJwtIsRejected",
+          "result": "PASS"
+        },
+        {
+          "name": "validationResponseMustNotEchoPassword",
+          "result": "FAIL"
+        },
+        {
+          "name": "customerCannotUseAdminRefundEndpoint",
+          "result": "PASS"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,999 @@
+{
+  "note": "Static controller inventory. Null method_guard does not mean anonymous access: SecurityConfig and service ownership checks also apply. All 142 mappings inventoried; only named probe routes executed.",
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/v1/admin/dashboard/overview",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/admin/controller/AdminDashboardController.java",
+      "line": 29
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/admin/dashboard/sales-report",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/admin/controller/AdminDashboardController.java",
+      "line": 36
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/admin/dashboard/user-analytics",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/admin/controller/AdminDashboardController.java",
+      "line": 45
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/admin/dashboard/product-analytics",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/admin/controller/AdminDashboardController.java",
+      "line": 54
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/admin/dashboard/inventory-report",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/admin/controller/AdminDashboardController.java",
+      "line": 61
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/admin/dashboard/recent-activities",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/admin/controller/AdminDashboardController.java",
+      "line": 69
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/register",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/auth/controller/AuthController.java",
+      "line": 27
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/login",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/auth/controller/AuthController.java",
+      "line": 39
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/refresh",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/auth/controller/AuthController.java",
+      "line": 49
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/logout",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/auth/controller/AuthController.java",
+      "line": 59
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/logout-all",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/auth/controller/AuthController.java",
+      "line": 69
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/forgot-password",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/auth/controller/AuthController.java",
+      "line": 76
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/reset-password",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/auth/controller/AuthController.java",
+      "line": 85
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/change-password",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/auth/controller/AuthController.java",
+      "line": 94
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/verify-email",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/auth/controller/AuthController.java",
+      "line": 103
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/resend-verification",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/auth/controller/AuthController.java",
+      "line": 112
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/cart",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/cart/controller/CartController.java",
+      "line": 27
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/cart/items",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/cart/controller/CartController.java",
+      "line": 34
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/cart/items/{itemId}",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/cart/controller/CartController.java",
+      "line": 42
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/cart/items/{itemId}",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/cart/controller/CartController.java",
+      "line": 51
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/cart",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/cart/controller/CartController.java",
+      "line": 58
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/cart/count",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/cart/controller/CartController.java",
+      "line": 65
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/notifications",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/notification/controller/NotificationController.java",
+      "line": 35
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/notifications/unread",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/notification/controller/NotificationController.java",
+      "line": 49
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/notifications/recent",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/notification/controller/NotificationController.java",
+      "line": 63
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/notifications/count",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/notification/controller/NotificationController.java",
+      "line": 72
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/notifications/{notificationId}/read",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/notification/controller/NotificationController.java",
+      "line": 81
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/notifications/read-all",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/notification/controller/NotificationController.java",
+      "line": 90
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/notifications/read-batch",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/notification/controller/NotificationController.java",
+      "line": 99
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/notifications/{notificationId}",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/notification/controller/NotificationController.java",
+      "line": 108
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/notifications/preferences",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/notification/controller/NotificationController.java",
+      "line": 119
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/notifications/preferences",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/notification/controller/NotificationController.java",
+      "line": 128
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/notifications/admin/send",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/notification/controller/NotificationController.java",
+      "line": 140
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/notifications/admin/bulk",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/notification/controller/NotificationController.java",
+      "line": 149
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/notifications/admin/cleanup",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/notification/controller/NotificationController.java",
+      "line": 158
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/orders",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "line": 35
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/orders/my",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "line": 44
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/orders/my/status/{status}",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "line": 53
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/orders/my/{orderId}",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "line": 63
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/orders/my/number/{orderNumber}",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "line": 71
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/orders/my/{orderId}/cancel",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "line": 80
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/orders/my/{orderId}/invoice",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "line": 88
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/orders/my/number/{orderNumber}/invoice",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "line": 104
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/orders",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "line": 122
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/orders/status/{status}",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "line": 131
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/orders/{orderId}",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "line": 141
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/orders/{orderId}/status",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "line": 149
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/orders/{orderId}/notes",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "line": 159
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/orders/{orderId}/invoice",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "line": 169
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/payments/create-intent",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/payment/controller/PaymentController.java",
+      "line": 25
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/payments/confirm/{paymentIntentId}",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/payment/controller/PaymentController.java",
+      "line": 34
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/payments/refund/{orderId}",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/payment/controller/PaymentController.java",
+      "line": 42
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/webhooks/stripe",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/payment/controller/WebhookController.java",
+      "line": 24
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/pricing/currencies",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "line": 30
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/pricing/currencies/{code}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "line": 37
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/pricing/currencies/default",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "line": 45
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/pricing/convert",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "line": 52
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/pricing/regions",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "line": 74
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/pricing/regions/{code}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "line": 81
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/pricing/regions/default",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "line": 89
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/pricing/regions/{regionCode}/taxes",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "line": 100
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/pricing/calculate-tax",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "line": 108
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/pricing/regions/{regionCode}/shipping",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "line": 130
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/pricing/calculate-shipping",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "line": 138
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/pricing/products/{productId}/price",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "line": 167
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/pricing/products/prices",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "line": 177
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/pricing/calculate",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "line": 190
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/BrandController.java",
+      "line": 33
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands/paginated",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/BrandController.java",
+      "line": 40
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands/featured",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/BrandController.java",
+      "line": 55
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands/{id}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/BrandController.java",
+      "line": 62
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands/slug/{slug}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/BrandController.java",
+      "line": 69
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands/search",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/BrandController.java",
+      "line": 76
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands",
+      "method_guard": "hasAnyRole('ADMIN', 'SUPER_ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/product/controller/BrandController.java",
+      "line": 89
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/brands/{id}",
+      "method_guard": "hasAnyRole('ADMIN', 'SUPER_ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/product/controller/BrandController.java",
+      "line": 97
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/brands/{id}",
+      "method_guard": "hasAnyRole('ADMIN', 'SUPER_ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/product/controller/BrandController.java",
+      "line": 107
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/categories",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/CategoryController.java",
+      "line": 33
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/categories/tree",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/CategoryController.java",
+      "line": 40
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/categories/root",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/CategoryController.java",
+      "line": 47
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/categories/featured",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/CategoryController.java",
+      "line": 54
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/categories/{categoryId}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/CategoryController.java",
+      "line": 61
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/categories/slug/{slug}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/CategoryController.java",
+      "line": 68
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/categories/{parentId}/children",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/CategoryController.java",
+      "line": 75
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/categories",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/product/controller/CategoryController.java",
+      "line": 84
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/categories/{categoryId}",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/product/controller/CategoryController.java",
+      "line": 95
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/categories/{categoryId}",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/product/controller/CategoryController.java",
+      "line": 106
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 38
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/{productId}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 46
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/slug/{slug}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 54
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/sku/{sku}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 61
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/category/{categoryId}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 68
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/brand/{brandId}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 77
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/search",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 86
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/featured",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 95
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/new-arrivals",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 103
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/best-sellers",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 111
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/on-sale",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 119
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/{productId}/related",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 127
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/admin/all",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 138
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/products",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 148
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/products/{productId}",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 159
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/products/{productId}",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "line": 170
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/{productId}/reviews",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 34
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/{productId}/reviews/verified",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 52
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/{productId}/reviews/stats",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 66
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/reviews/{reviewId}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 73
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/products/{productId}/reviews",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 83
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/reviews/{reviewId}",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 98
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/reviews/{reviewId}",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 111
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/reviews/{reviewId}/vote",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 120
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/reviews/{reviewId}/vote",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 133
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/users/me/reviews",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 142
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/products/{productId}/can-review",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 156
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/admin/reviews",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 167
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/admin/reviews/pending",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 180
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/admin/reviews/{reviewId}/moderate",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 193
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/admin/reviews/{reviewId}/response",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "line": 204
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/uploads/products",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/upload/controller/ImageUploadController.java",
+      "line": 29
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/uploads/products/multiple",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/upload/controller/ImageUploadController.java",
+      "line": 39
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/uploads/categories",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/upload/controller/ImageUploadController.java",
+      "line": 51
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/uploads/brands",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/upload/controller/ImageUploadController.java",
+      "line": 61
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/uploads/users/avatar",
+      "method_guard": "isAuthenticated()",
+      "source": "src/main/java/com/foalrider/modules/upload/controller/ImageUploadController.java",
+      "line": 71
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/uploads/{publicId}",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/upload/controller/ImageUploadController.java",
+      "line": 81
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/uploads/transform",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/upload/controller/ImageUploadController.java",
+      "line": 94
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/uploads/thumbnail",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/upload/controller/ImageUploadController.java",
+      "line": 104
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/users/me/addresses",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/user/controller/AddressController.java",
+      "line": 29
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/users/me/addresses/{id}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/user/controller/AddressController.java",
+      "line": 36
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/users/me/addresses/default",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/user/controller/AddressController.java",
+      "line": 43
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/users/me/addresses",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/user/controller/AddressController.java",
+      "line": 50
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/users/me/addresses/{id}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/user/controller/AddressController.java",
+      "line": 60
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/users/me/addresses/{id}",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/user/controller/AddressController.java",
+      "line": 69
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/users/me/addresses/{id}/default",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/user/controller/AddressController.java",
+      "line": 76
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/users/me",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/user/controller/UserController.java",
+      "line": 34
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/users/me",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/user/controller/UserController.java",
+      "line": 41
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/users/me/change-password",
+      "method_guard": null,
+      "source": "src/main/java/com/foalrider/modules/user/controller/UserController.java",
+      "line": 49
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/users",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/user/controller/UserController.java",
+      "line": 59
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/users/search",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/user/controller/UserController.java",
+      "line": 68
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/users/{userId}",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/user/controller/UserController.java",
+      "line": 78
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/users/{userId}",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/user/controller/UserController.java",
+      "line": 86
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/users/{userId}/deactivate",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/user/controller/UserController.java",
+      "line": 96
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/users/{userId}/activate",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/user/controller/UserController.java",
+      "line": 104
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/users/{userId}",
+      "method_guard": "hasRole('ADMIN')",
+      "source": "src/main/java/com/foalrider/modules/user/controller/UserController.java",
+      "line": 112
+    }
+  ]
+}

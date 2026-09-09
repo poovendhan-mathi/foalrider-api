@@ -1,0 +1,1026 @@
+{
+  "baseline_commit": "4f5cd0044b6e3872accdd96f5dade7ffd1e476bd",
+  "note": "Inventoried and statically reviewed; inventory does not imply every path was executed. No source content or secret values included.",
+  "files": [
+    {
+      "path": "src/main/java/com/foalrider/FoalRiderApplication.java",
+      "lines": 13,
+      "sha256": "484c82d9594806431d5afaaae0d7f2b9076b60b977657a814b0405b921e44295"
+    },
+    {
+      "path": "src/main/java/com/foalrider/config/AuditConfig.java",
+      "lines": 31,
+      "sha256": "14700c65e6840502985e316ba31c5dca04bd75e85474adb7385357b8e87006b0"
+    },
+    {
+      "path": "src/main/java/com/foalrider/config/CloudinaryConfig.java",
+      "lines": 35,
+      "sha256": "d29e7fdfca2a3e5e95053585dee86c46ab241d4269d7a97cd9790a7b8e403a62"
+    },
+    {
+      "path": "src/main/java/com/foalrider/config/DataInitializer.java",
+      "lines": 59,
+      "sha256": "8f59f3f1f744ed45032a5cebdc457c9027319ae17509fc4179dcb62ea4a0125d"
+    },
+    {
+      "path": "src/main/java/com/foalrider/config/JwtConfig.java",
+      "lines": 37,
+      "sha256": "e32d3612da19083e334020ef7283ab5715978bdbee7e277846bff9b2ec17d110"
+    },
+    {
+      "path": "src/main/java/com/foalrider/config/OpenApiConfig.java",
+      "lines": 59,
+      "sha256": "4086b9d18546bb782a74651d7e540446bf3c215531a8b45726afe879105c64b0"
+    },
+    {
+      "path": "src/main/java/com/foalrider/config/ProductDataSeeder.java",
+      "lines": 326,
+      "sha256": "4798a21c7c63be1462107f83c23931eec96b19f86d5475457e7d3ad51ef5697c"
+    },
+    {
+      "path": "src/main/java/com/foalrider/config/RedisConfig.java",
+      "lines": 60,
+      "sha256": "87278046e87fb214d13777c7fff8121fced856b8e1513f68fa0b996860a3d1f3"
+    },
+    {
+      "path": "src/main/java/com/foalrider/config/SecurityConfig.java",
+      "lines": 133,
+      "sha256": "9e4fe4c498a40b9010a62adb8834139a74c985105b36489ba5e1e6832ba0d818"
+    },
+    {
+      "path": "src/main/java/com/foalrider/config/StripeConfig.java",
+      "lines": 39,
+      "sha256": "44550564146911d51d405e6cca93631b880bb95f555b8688d4b9713609065913"
+    },
+    {
+      "path": "src/main/java/com/foalrider/config/WebConfig.java",
+      "lines": 75,
+      "sha256": "dba7cbd5d60bc07fd3c92ba7ff2692991fabd27cb9dbb677b8fbeee6f28414f2"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/admin/controller/AdminDashboardController.java",
+      "lines": 76,
+      "sha256": "c2cce0462c7e3903eb099330140a3fc026d3ed274eac1f712c0ec123492e0a4d"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/admin/dto/DashboardOverviewResponse.java",
+      "lines": 55,
+      "sha256": "1fd20b65c7cb0ad8ccbb3f0d7c88be746ec90ca4b76e3fad9591d303c4c1a829"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/admin/dto/InventoryReportResponse.java",
+      "lines": 53,
+      "sha256": "9811b0245e2fd7ce63a98c383cb2190ccf9d8caa62d451f5631830ea233af741"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/admin/dto/ProductAnalyticsResponse.java",
+      "lines": 62,
+      "sha256": "fce68458a4ab60d3763790904cba84389ebb07d5c6a76e254994a0f8c9bd2af0"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/admin/dto/RecentActivityResponse.java",
+      "lines": 42,
+      "sha256": "842648ed45fa9633026149612ca2c1d4c48a04f84a7fff33250e66624f0044b0"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/admin/dto/SalesReportResponse.java",
+      "lines": 64,
+      "sha256": "224eacad268466ddfa6e5f8de4f0ea45da28b4e45c89e95a01ee63e1b0fada42"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/admin/dto/UserAnalyticsResponse.java",
+      "lines": 62,
+      "sha256": "d8245fed8d24f233bfcb96f73a1ad3047097717e6b683bad30d0384f4db70703"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/admin/service/AdminDashboardService.java",
+      "lines": 42,
+      "sha256": "e9cf1b943f28317ce91c36d736a5c998ee2c4cb676ffde6f53223d2f95e7d46c"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/admin/service/AdminDashboardServiceImpl.java",
+      "lines": 465,
+      "sha256": "c43661b61d6d957aa1e67212357ee1e3b160e79f388de4ad6f02cd2e208b634d"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/auth/controller/AuthController.java",
+      "lines": 118,
+      "sha256": "3a29e6287d8f25d80bb8d439584bbb00cdd28b0e5c3c00350e4e84b1d15a66ee"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/auth/dto/AuthResponse.java",
+      "lines": 55,
+      "sha256": "d7db1939ec7ec79efba86e8adbe4f49c97ec3e5de8fe9b582cbc46ea2c9343d9"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/auth/dto/ChangePasswordRequest.java",
+      "lines": 33,
+      "sha256": "bff52f4d8ef6d3e56ead6bd8859c9a31ed4e355c0e66eb0ce686aed3ebfa08c6"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/auth/dto/ForgotPasswordRequest.java",
+      "lines": 22,
+      "sha256": "0c120f92c7ca84fc9db99e4530b93b31445e20ddf767795059553e525dada2f7"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/auth/dto/LoginRequest.java",
+      "lines": 25,
+      "sha256": "c85c7949cadaee4187af015102daa317ac002b20fa7a33168282fc06fbdc2c38"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/auth/dto/RefreshTokenRequest.java",
+      "lines": 20,
+      "sha256": "7bd89202cf3f2e14110e42e5a5abaf2d87e7c7b50a0d7cb812cd6e969a0d1f4f"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/auth/dto/RegisterRequest.java",
+      "lines": 38,
+      "sha256": "7ef42af0d5a9ae3201b4c523cb3390d65d448ac75a7ad63e71e259f4068cb49a"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/auth/dto/ResetPasswordRequest.java",
+      "lines": 33,
+      "sha256": "bfacd78e5426b0bab35fd3425af702fe9c61dfb67eabf1dd37f92c856154167f"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/auth/dto/VerifyEmailRequest.java",
+      "lines": 20,
+      "sha256": "67a99beec3197364a2503f833b1b73956a492b9404732d621581bb0007b30de4"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/auth/service/AuthService.java",
+      "lines": 61,
+      "sha256": "9b39289e9108fc44d1493031c5431848aaa54e484938d97a59d1ca9ef54b8b7a"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/auth/service/AuthServiceImpl.java",
+      "lines": 399,
+      "sha256": "7150b35042849b759e68a9dda4833badd8d8a48bde6285880f2cd16be8b0ad65"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/cart/controller/CartController.java",
+      "lines": 71,
+      "sha256": "d6ca2be164d5cbd83494876b9bed7bd711472c3006e734f9aa47cfac81ed3b6e"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/cart/dto/AddToCartRequest.java",
+      "lines": 26,
+      "sha256": "5f1efddd6a3d94ca98194b2a5ee7756dd69ed1b91a9d168f45321100397476fd"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/cart/dto/CartItemResponse.java",
+      "lines": 30,
+      "sha256": "580bcefcd804573d91b635e4e4ece100a87ef9115aa929544b4ab70ba290616a"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/cart/dto/CartResponse.java",
+      "lines": 47,
+      "sha256": "be79604fe062c11140b2991bac1cd7448cbebe1fd1ab95a2160131215382bb5c"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/cart/dto/UpdateCartItemRequest.java",
+      "lines": 19,
+      "sha256": "6d521b252b604f243eeee13476446803b4d763c644757980ccb2ded83d2bc502"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/cart/entity/Cart.java",
+      "lines": 65,
+      "sha256": "7706c0543f3779cb7ecdd91624d3ff81020856383ef9919cdf4ca368c7d760ef"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/cart/entity/CartItem.java",
+      "lines": 64,
+      "sha256": "9503db02c27e7598666e61d363fd037272faa4064c496a4091dd97572e5bd2a9"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/cart/repository/CartItemRepository.java",
+      "lines": 24,
+      "sha256": "163f0a42d909c84d5486d972b559f40f8ce2c70e0804612b224e2047d01a687b"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/cart/repository/CartRepository.java",
+      "lines": 23,
+      "sha256": "56b7819e48027b7c069cc291b328d53cc964e71bd86edc7d030449fefa50e7ec"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/cart/service/CartService.java",
+      "lines": 40,
+      "sha256": "ec456ec4e7efce269971ede3fb46e0efee2cf2e364715c19874a2620d68910f7"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/cart/service/CartServiceImpl.java",
+      "lines": 334,
+      "sha256": "8067590045a43f41e701a142778eff2c5fba0ab230cf9c3ec86c3c9dff4d0294"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/controller/NotificationController.java",
+      "lines": 166,
+      "sha256": "bc5cb0f0fe2016cc1c1dce30531cd711f38589d1a8510226ccff468edf35a1b0"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/dto/BulkNotificationRequest.java",
+      "lines": 47,
+      "sha256": "24de252df589db433e69d0f1f1dacd9428302b8bd615dbeddc51a44295751f71"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/dto/CreateNotificationRequest.java",
+      "lines": 48,
+      "sha256": "7700a4da6492f9ab61efcc0da5a4b23c084573266a75902c06f47c4e297e9165"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/dto/NotificationCountResponse.java",
+      "lines": 19,
+      "sha256": "8f453026861942cb21a9f2657bbf4637c29fcc00c86847773db6b1e0424165af"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/dto/NotificationPreferenceResponse.java",
+      "lines": 48,
+      "sha256": "b4119d43c1781f0b8dfa07fcf960fbf639a292d6406395ac28f88eaa5378280e"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/dto/NotificationResponse.java",
+      "lines": 34,
+      "sha256": "fca2b1d387c3bd699da670daf1b1589b34be5b862f5966a795dac824be7a892b"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/dto/UpdateNotificationPreferenceRequest.java",
+      "lines": 40,
+      "sha256": "d41a4fdb7ff65ba1fb8944ace59d4f8c763cdb1b1bc4c0f76dce5c4963fa7fa6"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/entity/Notification.java",
+      "lines": 86,
+      "sha256": "4b8c38e10f867e720cca207ceb9b2a7514c7a030b1769c940a1aa2fda1df8a4e"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/entity/NotificationChannel.java",
+      "lines": 11,
+      "sha256": "706493b57f28d3e5e064ef2741f9e275e6decb7e19a834ae6beac061d081e832"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/entity/NotificationPreference.java",
+      "lines": 84,
+      "sha256": "51d0880d55b44f3ac947497cf62ffb67790abd495dd277ec19d6380ce3f2cc62"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/entity/NotificationType.java",
+      "lines": 42,
+      "sha256": "faff46060a05af9046538f80d11df1f9bbc4f7ca4ef149f3475b728ace35db7a"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/repository/NotificationPreferenceRepository.java",
+      "lines": 25,
+      "sha256": "2fd62f0dd6e946b6b8ebe1ac187119f296e6d16c9954593324cab47b2f38ba85"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/repository/NotificationRepository.java",
+      "lines": 80,
+      "sha256": "f3be0b715a42fa4cc15e66f105686ea9843eb383055f9731ef59bf253cb1b6ff"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/service/EmailService.java",
+      "lines": 37,
+      "sha256": "dd975a6e5e8bbaa1e75ba34d262eae557cd28578e0f8adb1f23a296288a0fe74"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/service/EmailServiceImpl.java",
+      "lines": 269,
+      "sha256": "063c9c534db6f1c3898d821b986dbd21f1e45939e367e2ff85bc7b3aa6ab6bb9"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/service/NotificationService.java",
+      "lines": 121,
+      "sha256": "2edf86203a3ab6d78c17e1da3b1c54492443c374d7f07064429c70c1ecb9a2cf"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/notification/service/NotificationServiceImpl.java",
+      "lines": 406,
+      "sha256": "710407d3f1eb5e1a7e5cc4db15668428f80d508c1e57457185222a883eaec9c7"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/controller/OrderController.java",
+      "lines": 182,
+      "sha256": "dec77185303c5a440afe0cd1a0ea4553792240cb356a25f1a361c3a38054f8f7"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/dto/BillingAddressRequest.java",
+      "lines": 41,
+      "sha256": "787cbf36640dddcd2d2dbf72d9b143e23ae5e90016ff9c8883432f389bde0a37"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/dto/CreateOrderRequest.java",
+      "lines": 26,
+      "sha256": "78cbc514de15df5ca346d37d988085a438966c6ac5ed71a9b98f88f6839930ba"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/dto/OrderItemResponse.java",
+      "lines": 29,
+      "sha256": "dec99d78eeba48c9b181214ac2972e1cde16e4dd557023961c4c13208756ada5"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/dto/OrderResponse.java",
+      "lines": 62,
+      "sha256": "a089a9abac78a5bbd8d460ab4554af2ebe9ee2222d4aac249d6a79bb2ed37ffa"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/dto/OrderSummaryResponse.java",
+      "lines": 30,
+      "sha256": "f461c8300027f13dfaa2be063ee1c0db2f926c9f38213dee0f811e4dae56ae6c"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/dto/ShippingAddressRequest.java",
+      "lines": 48,
+      "sha256": "4f2904c6339baa516ada322f57423ae8c27a519b764a7f49c0e947c140d7f5c6"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/dto/ShippingAddressResponse.java",
+      "lines": 23,
+      "sha256": "011dca770bf022cadc8678d81669f7b046f3133be15cd7789a734df58ce5b8da"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/dto/UpdateOrderStatusRequest.java",
+      "lines": 22,
+      "sha256": "d1f4e9ade026c163062849b92e0f06d859a35ed9449ccd31ae638ee5d06b0b93"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/entity/Order.java",
+      "lines": 174,
+      "sha256": "a9f9fbeac5ded06529babe83566cec523d996a56ed3ac4e7192c29c7730902d1"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/entity/OrderItem.java",
+      "lines": 67,
+      "sha256": "c6bd83186d2159a897dfd63200adfdedfe147ed474285b00734a1eff95bc6d69"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/entity/OrderStatus.java",
+      "lines": 16,
+      "sha256": "9a09a591fc46f36df4939eab630fc5fffb979ce965443496d9c98e10732b49d9"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/entity/OrderStatusHistory.java",
+      "lines": 29,
+      "sha256": "9c8e3ac8d8aa7068e863f9f7875bf869d1ceef611152a5b04681d4ddd1c867cb"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/entity/PaymentStatus.java",
+      "lines": 13,
+      "sha256": "46a01ca424e920ab22191cc2a9f2b71d9d752563b516d08aef9304777147101e"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/repository/OrderItemRepository.java",
+      "lines": 16,
+      "sha256": "75e4ea547dc857dea9bdef653aab38b02a0aa9efa9796549b38fbb5bf32e9309"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/repository/OrderRepository.java",
+      "lines": 49,
+      "sha256": "b177f6f64db75563858d716f33bb96a404703523ad6fdae090c435168759850f"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/service/InvoiceService.java",
+      "lines": 33,
+      "sha256": "c3cb1273da75f2509c948552bf0f1afbc56ff3acbb37770c7b69ee5f95dcb845"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/service/InvoiceServiceImpl.java",
+      "lines": 437,
+      "sha256": "43009b144db55d31ebc7bbd43cdaeb06ce3aa466a23f26ef18421102b5dfa5d6"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/service/OrderService.java",
+      "lines": 68,
+      "sha256": "f716483babe1ed741e2ba4da46c71668021e7b929c36772771a1e4eec20d5ec7"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/order/service/OrderServiceImpl.java",
+      "lines": 473,
+      "sha256": "a0aeb37b0af5fc85fde323803a4b4a422553ca8062741a6747db236f10557dc6"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/payment/controller/PaymentController.java",
+      "lines": 51,
+      "sha256": "f9b3d4728049eccd99b65c6c7d1376c232789df2892a83a45ccd0cb7e66ab33d"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/payment/controller/WebhookController.java",
+      "lines": 40,
+      "sha256": "d529f700d13f54501b50616218534f90f80a602b20911f0fc41753effc7dacc3"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/payment/dto/CreatePaymentRequest.java",
+      "lines": 19,
+      "sha256": "7c64e34ce18ae7b01453057f530538dab282dc15231da696b01c9b5ffbf012d1"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/payment/dto/PaymentIntentResponse.java",
+      "lines": 21,
+      "sha256": "feef5a229ff654447ff69ea8998f96fd212b91229f3c23857f5bc289a5ac7501"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/payment/dto/PaymentResponse.java",
+      "lines": 23,
+      "sha256": "caf2003103b14e9b6fc72ea8fb1a1d4a872139db2e6a9c82b6935eae89d96cb4"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/payment/service/PaymentService.java",
+      "lines": 28,
+      "sha256": "a44b4239cdff3792f8f31505bede38b34bf5a04c45df0791f662fe38f19dd04c"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/payment/service/PaymentServiceImpl.java",
+      "lines": 275,
+      "sha256": "1c18ae3978bcc2b1bbad10d46708fa561f9c795f7b0e5a58267f228e6c1854b5"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/config/PricingDataInitializer.java",
+      "lines": 426,
+      "sha256": "cf40318d4356467d7391b02fe5bc8e0a491d654f376fd8ba046eae42958d84ec"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/controller/PricingController.java",
+      "lines": 267,
+      "sha256": "2e4db0df4e7c9cd9df42b668805e42a68d053a9be41ae1a7b3f1f5df61cbf12b"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/dto/CurrencyDTO.java",
+      "lines": 28,
+      "sha256": "37e96186dd352060de685ca788f1248364df4febb13a63e580bfe370373cee28"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/dto/PricingCalculationDTO.java",
+      "lines": 79,
+      "sha256": "240a1aba0057a151548675ad61f1e3d323f65efe73806786cf1cd8b30ae25375"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/dto/RegionDTO.java",
+      "lines": 27,
+      "sha256": "671c30dd05f866ee729a323e124b02d5041bfba8bf30241e00aa6ae2ab6bd12a"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/dto/RegionalPriceDTO.java",
+      "lines": 34,
+      "sha256": "6620052ccfb124332d5ded46d132c3eabda9b848010ea2f274910d9751ed2865"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/dto/ShippingRateDTO.java",
+      "lines": 34,
+      "sha256": "4c393f5a39e6cbc4e725501087dce6ba5a2f630bbf1554026fad49118f669413"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/dto/TaxRateDTO.java",
+      "lines": 26,
+      "sha256": "fcf53257a83ebda04913695bebfd14e7e3538d21b9637582deccb1552fbb5f19"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/entity/Currency.java",
+      "lines": 88,
+      "sha256": "3f0b9be2f7c5064d0d62877c14fda58bf9cd752f8522090a8a5f887dc4d5b444"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/entity/Region.java",
+      "lines": 45,
+      "sha256": "321ff4874d8320518927bd5cff8053a629710a81f25e61e19345a5065659fd10"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/entity/RegionalPrice.java",
+      "lines": 83,
+      "sha256": "ee431f907f15dab8796efc139552beba38131069ce9dfb3f264c315c2c1e8e00"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/entity/ShippingRate.java",
+      "lines": 83,
+      "sha256": "5ad61274623727e1a115202cc62adf8032af96f41d40ffdb7e857609061c016f"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/entity/TaxRate.java",
+      "lines": 60,
+      "sha256": "3fa0414ac2803e49e20cc7dbeb643f56521705980040d75eff35835c934824da"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/repository/CurrencyRepository.java",
+      "lines": 25,
+      "sha256": "b27f4940ff9a9d31195f781a4995f8fb6ac6e39809c0f9746c4fbfbdc84e6c56"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/repository/RegionRepository.java",
+      "lines": 25,
+      "sha256": "02102b97e685e01062d73135ffce7a46f0dcfed733608ed33559f31dcab28b6e"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/repository/RegionalPriceRepository.java",
+      "lines": 36,
+      "sha256": "819d7fabae57ca76515d5353fee965b326402dc1f4df132d81a068749e9e239f"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/repository/ShippingRateRepository.java",
+      "lines": 31,
+      "sha256": "82dce5e165e4d970e2b25040f9bc6f49f009138418083cc505fda6f515ddf0aa"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/repository/TaxRateRepository.java",
+      "lines": 25,
+      "sha256": "37b5088952b3378447367cf42b9d0edd0284376c5b98fbd7b28418e4da226890"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/pricing/service/PricingService.java",
+      "lines": 519,
+      "sha256": "78d9a366c45187381b0e844ca522fee4e1ede509c46d767dcbde642b233ef39d"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/controller/BrandController.java",
+      "lines": 114,
+      "sha256": "8c11a3b601102a30fd74e54c31a7fa36417d9f87e8e60c1fc6f8bfb0b94d5acc"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/controller/CategoryController.java",
+      "lines": 114,
+      "sha256": "b67cb6e45ed127ed2160bbbc9bae27722d2258e8e846e404bdb07d86af45d5d4"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/controller/ProductController.java",
+      "lines": 178,
+      "sha256": "8be117526f01f4859a4e59e8d2324bf13073e8418644541dd321b86786843d7f"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/dto/BrandRequest.java",
+      "lines": 35,
+      "sha256": "c44a3be748bdb5a1d9f0270a8c6354b7279418604969a30e0c6fd9aa176468f7"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/dto/BrandResponse.java",
+      "lines": 27,
+      "sha256": "14a95638d84afd1be7c347ba93f2c064ef4e627710e3dd4e63849af90844b953"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/dto/CategoryRequest.java",
+      "lines": 44,
+      "sha256": "199dbc8e0fe16d9790d4145ffd0ae3d4cab10e3b16194b4f6ebbaf947ae41a54"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/dto/CategoryResponse.java",
+      "lines": 33,
+      "sha256": "2591fcb35b10535c8708a47e74e41d946983735143ecfdaccc43b08e1f5c3356"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/dto/ProductImageRequest.java",
+      "lines": 29,
+      "sha256": "ad655b933f994cf64e19a0d7f32f42b637d2fc1b686287f2a5a9928f903158e1"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/dto/ProductImageResponse.java",
+      "lines": 23,
+      "sha256": "4cc2f859fcdf8d50e450afdb02500adc78a826a5a5ab1a40816ef9385a82512a"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/dto/ProductRequest.java",
+      "lines": 76,
+      "sha256": "b4df25df52ccb9e1989256d0a9808195491cbeaf7824e758986d3aecc8fe0baf"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/dto/ProductResponse.java",
+      "lines": 63,
+      "sha256": "be5b57384b7f94319a478ceb03158722945fd4f63064887231aef4eed5847fc4"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/dto/ProductVariantRequest.java",
+      "lines": 46,
+      "sha256": "7d9a0b0d895167acca1b866386e127ef3183a42cc921a5f3c328c26060c020d6"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/dto/ProductVariantResponse.java",
+      "lines": 33,
+      "sha256": "e15e9e16dd881c21ce246e760ffd6be1640d30eb44316fae2934034307b86aa5"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/entity/Brand.java",
+      "lines": 48,
+      "sha256": "9e9620b06958783c21052ec2f8e9f8ec85c898bca97c10579b88ea03c1ed27c9"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/entity/Category.java",
+      "lines": 63,
+      "sha256": "22dbefa746bad18d8c49f7857aecf085c70387bfec6f90135ef929b7037a8984"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/entity/Product.java",
+      "lines": 151,
+      "sha256": "d7d11d6fec180033040872d9eb1210c8c24e086e353355c6c91eabf7db9eba68"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/entity/ProductImage.java",
+      "lines": 36,
+      "sha256": "72bc8c2370b8edb295f1c7ed3f69c33f1f23c4aa2400a54d03d29b145c4e25f0"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/entity/ProductVariant.java",
+      "lines": 85,
+      "sha256": "46a7678733ea1effc0e648e121c677d4095498a7083eaccda97bff6cc7648343"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/repository/BrandRepository.java",
+      "lines": 35,
+      "sha256": "c76edc562ade30e844f523da35f7179e35cc9a5608ffa75132dd89b7659a905c"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/repository/CategoryRepository.java",
+      "lines": 35,
+      "sha256": "e4c22178322aa409e8025f7a628cdd30d040e92a16a051238f29d633cf52b50b"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/repository/ProductImageRepository.java",
+      "lines": 33,
+      "sha256": "c3a8751ca1e37001fb3912a9df471f0e79652c5e2f78c512c2b5149a268214b2"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/repository/ProductRepository.java",
+      "lines": 70,
+      "sha256": "4cc5234ecf4510d9f8ebcd9f9eddaaa9929766fdb3830ff98a7a172bdb6ffabc"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/repository/ProductVariantRepository.java",
+      "lines": 42,
+      "sha256": "d356b7bc3925a5f604d51aad692a1958947708b769e50f5532149c83b3a9ef38"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/service/BrandService.java",
+      "lines": 60,
+      "sha256": "5fc7b56baa2d46c96f6afc6cdfb3ef3ac475ddbc32cfe81bdc8e1088f91a93ec"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/service/BrandServiceImpl.java",
+      "lines": 175,
+      "sha256": "e0e231149b7ccebcff0da5c3695137cb04f118c6101a6e1bab0a5e7e6d0c944e"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/service/CategoryService.java",
+      "lines": 36,
+      "sha256": "c41620b93f4e024c276fc83f9c2aba4fdac6c2accaa27d5c2fdd2a33e43364e2"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/service/CategoryServiceImpl.java",
+      "lines": 216,
+      "sha256": "56d06dace955c82668d5c656b7a026dd17c07a97beb18f793dad2a369284b371"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/service/ProductService.java",
+      "lines": 51,
+      "sha256": "406523d8c4ade42dbfebd5a779cbdcde92379afe1ed5c778a7eedbb1b729345a"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/product/service/ProductServiceImpl.java",
+      "lines": 382,
+      "sha256": "2a03b0095502d87600fdef67140c32e3929cc62ce6090a54328620ac8be2dad9"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/controller/ReviewController.java",
+      "lines": 214,
+      "sha256": "754d0cb486592fdddf49c8e4cd3b5ecf9358157b5f16c8f96bb605698a78de32"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/dto/CreateReviewRequest.java",
+      "lines": 43,
+      "sha256": "86309312ef528d3fca8375c4a3287ae2e9d35b279e6c378748d147ca5f483035"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/dto/ModerateReviewRequest.java",
+      "lines": 25,
+      "sha256": "0aef23ff74d0133c6c12aa38c36d2bb3f35e7723831f2b4a406aba3929ca5ad7"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/dto/ReviewImageRequest.java",
+      "lines": 27,
+      "sha256": "cef7035af733a4b55ffa3645bee35e002757bb006a46a3c590e150d8736e83b6"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/dto/ReviewImageResponse.java",
+      "lines": 23,
+      "sha256": "e3a11efd3b05a024e1efd0447311226a8b852cfbe1ade96c7c7e5f25d33ddb03"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/dto/ReviewResponse.java",
+      "lines": 45,
+      "sha256": "311149b8d6143839dda61bee524c3362715b3191311b2543c975137e433042fb"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/dto/ReviewStatsResponse.java",
+      "lines": 26,
+      "sha256": "677c8c99b42b8dfc75f8725191bb4be5a623810b8690478d7d489148ca42b77d"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/dto/ReviewVoteRequest.java",
+      "lines": 20,
+      "sha256": "6d1ec9ea473336ae28f24b07afd436c82670bf4f9173c650047609f587c17c08"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/dto/UpdateReviewRequest.java",
+      "lines": 38,
+      "sha256": "b62fb1adf0ee3d80a2dd56c2b19df5f1b73a2f9dbfd6f3244f555184382925d7"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/entity/FitFeedback.java",
+      "lines": 10,
+      "sha256": "b591c173a350112c093664e768a4c87bbf7d9556763c0288a84f062d69c042c0"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/entity/Review.java",
+      "lines": 140,
+      "sha256": "c117d68e854ac7efa28289f17132debbbb2b8dce980170086128acf031586fcb"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/entity/ReviewImage.java",
+      "lines": 34,
+      "sha256": "a7d739cc6f33204d764d8e3a9a36474029003499ae26e08204a6099c63df2d2e"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/entity/ReviewStatus.java",
+      "lines": 11,
+      "sha256": "ee1fc67133def2343486509eca6418b598268f8e6dd5c768ec6eccf86ed6f62e"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/entity/ReviewVote.java",
+      "lines": 35,
+      "sha256": "21417b6fc144fc4809310e7c0c22325675a02ebdd09e708af89833d785dd20bf"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/repository/ReviewImageRepository.java",
+      "lines": 30,
+      "sha256": "709c7f5cd5ac6a1334d8bcf899e38ba199260c15bcd90d8e5478b2c8c26b489a"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/repository/ReviewRepository.java",
+      "lines": 75,
+      "sha256": "8dd42db2e976fce8f22cf539f9bd2abc4a9c45c8eb35ae0a58381dcbaf5bf583"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/repository/ReviewVoteRepository.java",
+      "lines": 35,
+      "sha256": "ef7ebad00a1d2347fb811ea032260010093242e74fdb084f533cbe499683b3da"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/service/ReviewService.java",
+      "lines": 95,
+      "sha256": "979a7be48097efc0db708d7a13c5ea5ce0aa665136600af3da95d81de546069d"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/review/service/ReviewServiceImpl.java",
+      "lines": 467,
+      "sha256": "a0624ec2e1d0be666c8f03bb564989fa56a87fed33cfc58cbeafe4de2e6cb681"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/upload/controller/ImageUploadController.java",
+      "lines": 121,
+      "sha256": "561f0963208c2fa4d02b9167328f42d0b981ce7b38a09734486f2c8ba8c1da15"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/upload/dto/ImageUploadResponse.java",
+      "lines": 23,
+      "sha256": "1c90d637cae30e06d24b5641491841ad5093028b8e12c243eca5edfa2c2b40b6"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/upload/service/CloudinaryImageUploadService.java",
+      "lines": 203,
+      "sha256": "1582445e88dd5747185396b2c733325f8055be4e42e484bef8a11e3b7841e105"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/upload/service/ImageUploadService.java",
+      "lines": 64,
+      "sha256": "2a3143343bec5d846db7e20bbaaf3d95b275f602dcd76d07e0d540484209c87b"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/controller/AddressController.java",
+      "lines": 82,
+      "sha256": "01ce941b705bbe3fb2a37ffec2d151683a204de4a5ec474bbac7245dea946246"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/controller/UserController.java",
+      "lines": 119,
+      "sha256": "df67e24b9d7acea01550072dc909fdf2667eff4c63df555e1b38513aba8b01c7"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/dto/AddressRequest.java",
+      "lines": 57,
+      "sha256": "5e7bbd713a935cb91a4a77eb6674b45fb81afc937b582e7e66a9ee3c53fd4e3d"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/dto/AddressResponse.java",
+      "lines": 36,
+      "sha256": "1bd53fdc448b29979d95ce68c45225445e477a010c3fb1e2faa87cf660e523db"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/dto/AdminUpdateUserRequest.java",
+      "lines": 26,
+      "sha256": "67209b20d9ef55cbc17476f3e53b36807781eb0d5fc6b77dbffd208cff47a788"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/dto/ChangePasswordRequest.java",
+      "lines": 28,
+      "sha256": "d101e5dd7c8f2c71642c55c0ef1c1b2fc6528f786c919fe7cc37110526b556e1"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/dto/UpdateProfileRequest.java",
+      "lines": 30,
+      "sha256": "e19057f5266d363f63d8863ac7fd83d7fe21474f1ee7bd1cabaae90a959b82b7"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/dto/UserResponse.java",
+      "lines": 30,
+      "sha256": "4044b6dd5ca824e47e518ff48af2585f66b409653af0fd792c9f940b20d46dc2"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/entity/Address.java",
+      "lines": 78,
+      "sha256": "18633c37bebe62536a18cc1ba2deab5c31610fa258045ca4c6f6e4ec47df5367"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/entity/RefreshToken.java",
+      "lines": 72,
+      "sha256": "72ed452adde520ab6d66109920db3bc78b746c2343665a3c11d4e5ff8fb09d89"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/entity/Role.java",
+      "lines": 56,
+      "sha256": "af4a7675e5e921ef4ed7a57003245505dde61d67c99ef51b2645b698b49c5ce8"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/entity/User.java",
+      "lines": 104,
+      "sha256": "8944901cda2d2ae0b06ce493e0cc677362743f96440273e27f2b084d62c9f61f"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/mapper/UserMapper.java",
+      "lines": 16,
+      "sha256": "a236fb899f5767025b9c8026f592f75f6436340873332d290a17f843922e4719"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/repository/AddressRepository.java",
+      "lines": 51,
+      "sha256": "5b7a34426515ad4272edb40b5e9cfbb4358c5d9229b550e46c0b2955c3847689"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/repository/RefreshTokenRepository.java",
+      "lines": 57,
+      "sha256": "ff8d8db717535b50d361d07afeef34d936d61a9e22bd10dbd57d5d8095309b26"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/repository/RoleRepository.java",
+      "lines": 25,
+      "sha256": "b368dc827a9aa902e621f6d5e2f527acaa6a4af85b545196fb41b05713ff8755"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/repository/UserRepository.java",
+      "lines": 75,
+      "sha256": "1670c029a1cc7a153f127347597c820764e3dc3388917d5a0b3a28c0834517c9"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/service/AddressService.java",
+      "lines": 48,
+      "sha256": "706cd0fff85819fc70c542aeb4ec75d0cc6874d79636d9c5732d7bba1dd4ccdc"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/service/AddressServiceImpl.java",
+      "lines": 198,
+      "sha256": "36db8c87ba11d9614676d801f3208d2227d0cb9edd9c5e07e1eee7aed3d9f1b0"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/service/UserService.java",
+      "lines": 69,
+      "sha256": "9364a12fc5feab6e8f0131b7fe7a81df528e61df474ee6faf2a21bec61534351"
+    },
+    {
+      "path": "src/main/java/com/foalrider/modules/user/service/UserServiceImpl.java",
+      "lines": 171,
+      "sha256": "3ed1f9b40c002148cd9f424e89ad6c1e9f781a923849e5cac8824a19bbdf1be5"
+    },
+    {
+      "path": "src/main/java/com/foalrider/security/CustomUserDetails.java",
+      "lines": 87,
+      "sha256": "4deb549f951b02799ff80a612a6ecaacb0170ebcd6ccb9f21e1ce2fab8b2791f"
+    },
+    {
+      "path": "src/main/java/com/foalrider/security/CustomUserDetailsService.java",
+      "lines": 40,
+      "sha256": "eb21be1f62fed991167c786ed7806061121859b85694ed1c9736d5ea10d5a679"
+    },
+    {
+      "path": "src/main/java/com/foalrider/security/SecurityUtils.java",
+      "lines": 108,
+      "sha256": "f2da7ceee1efb9c8b668c029edf8a93331724f6d6c266132dbd2c3bc99ec7f41"
+    },
+    {
+      "path": "src/main/java/com/foalrider/security/jwt/JwtAuthEntryPoint.java",
+      "lines": 48,
+      "sha256": "41de6fd0b1f6937556a9d93ad61b2bad4881d91d2bd0ad822ac40657750af1db"
+    },
+    {
+      "path": "src/main/java/com/foalrider/security/jwt/JwtAuthenticationFilter.java",
+      "lines": 75,
+      "sha256": "732ecd10cb2fed5e16a4f58f8497394e0018c3f2acac3c25c2b8646366f2cbba"
+    },
+    {
+      "path": "src/main/java/com/foalrider/security/jwt/JwtTokenProvider.java",
+      "lines": 146,
+      "sha256": "227c899bdbcd5e661d8a34d70ce5c98e0050c39ff6659eea7f972e50880b1270"
+    },
+    {
+      "path": "src/main/java/com/foalrider/shared/constants/AppConstants.java",
+      "lines": 98,
+      "sha256": "62d10e18cf2c5305489c24471ce65220f5164f229caa5da647703236e0da5a7f"
+    },
+    {
+      "path": "src/main/java/com/foalrider/shared/dto/ApiResponse.java",
+      "lines": 72,
+      "sha256": "f481f0737aa0a4cbbd74a8f3bc2839cc0e41c5337316b2f345a3c08e079557c7"
+    },
+    {
+      "path": "src/main/java/com/foalrider/shared/dto/ErrorResponse.java",
+      "lines": 73,
+      "sha256": "b27dfc451d3b61191db50fb8c0d69665b39a6301461a465be0db7389c24d14eb"
+    },
+    {
+      "path": "src/main/java/com/foalrider/shared/dto/PagedResponse.java",
+      "lines": 73,
+      "sha256": "200a3574597192c9f672d0a89d47cb876ee4d0de3fb96aae30be698e515290b7"
+    },
+    {
+      "path": "src/main/java/com/foalrider/shared/entity/BaseEntity.java",
+      "lines": 48,
+      "sha256": "3097e944cce3e2dad236b6873f5844232ea062bda6c6036389a3e7ad78740df6"
+    },
+    {
+      "path": "src/main/java/com/foalrider/shared/exception/BadRequestException.java",
+      "lines": 19,
+      "sha256": "eb94ff93963672b5c049268aef4cc68c20635203d2029b79e3312097dcf88a9b"
+    },
+    {
+      "path": "src/main/java/com/foalrider/shared/exception/BusinessException.java",
+      "lines": 32,
+      "sha256": "4e05cb08ea1d75a299f46b172e63786eaf54d730f0686069e5204fe7fc6eefe4"
+    },
+    {
+      "path": "src/main/java/com/foalrider/shared/exception/GlobalExceptionHandler.java",
+      "lines": 266,
+      "sha256": "2b4ebb806deeeb69c1877341336ea44b32d4bbf8989ac8b66c350a048cdc8d29"
+    },
+    {
+      "path": "src/main/java/com/foalrider/shared/exception/ResourceNotFoundException.java",
+      "lines": 41,
+      "sha256": "7a68f6a9a67b664fb913521d29a7d3a1492459ff183586cabf2a859e82fc6820"
+    },
+    {
+      "path": "src/main/java/com/foalrider/shared/exception/UnauthorizedException.java",
+      "lines": 19,
+      "sha256": "89d6254312da7be838e6dd7e30ff4ec6bca4b0cae2daea16df90444c2e490ac6"
+    },
+    {
+      "path": "src/main/java/com/foalrider/shared/util/PriceUtils.java",
+      "lines": 105,
+      "sha256": "f2ef0514417a39a17367d7f67ff02548862d1a539719968c9aa1b4c434d1fdf3"
+    },
+    {
+      "path": "src/main/java/com/foalrider/shared/util/SlugUtils.java",
+      "lines": 76,
+      "sha256": "50c177639de3c3ca04eff43a030b376526d5cd4301a50b2de1bbbfff6c3e19bd"
+    },
+    {
+      "path": "src/main/resources/application-dev.yml",
+      "lines": 63,
+      "sha256": "2f2c8d25b18b3ca439dcdb7494a80664bca7a55650202dac9fdc9547baa53419"
+    },
+    {
+      "path": "src/main/resources/application-prod.yml",
+      "lines": 65,
+      "sha256": "1d09b930a11ba5cadcaf20453851884e9109185518bfdccda73ef43350042ae4"
+    },
+    {
+      "path": "src/main/resources/application.yml",
+      "lines": 172,
+      "sha256": "de47586ce54c42cd46566748d0a6719d9a595f7a062bbc494a7a30f63a595ad5"
+    },
+    {
+      "path": "src/main/resources/db/migration/V1__create_roles_table.sql",
+      "lines": 35,
+      "sha256": "f5d722abee3999fbaa23ce86feb3beacc034e801f17d5dd7c3b3a3b47612e465"
+    },
+    {
+      "path": "src/main/resources/db/migration/V2__create_users_table.sql",
+      "lines": 33,
+      "sha256": "9269f4643066af797fa6b7565cef9c4c22d9cb62356d8c456402fe34a524ac59"
+    },
+    {
+      "path": "src/main/resources/db/migration/V3__create_refresh_tokens_table.sql",
+      "lines": 25,
+      "sha256": "10b700b6f925005b11314095890f57f6f499a3ce00174fb2fe29a285d6818f0c"
+    },
+    {
+      "path": "src/main/resources/db/migration/V4__seed_test_data.sql",
+      "lines": 392,
+      "sha256": "2d68474ac1e63b570438f0f2db35dc8ee48dfb51f7622cc23cd463f3770680d7"
+    },
+    {
+      "path": "src/main/resources/db/migration/V5__create_addresses_table.sql",
+      "lines": 28,
+      "sha256": "f4184648f3140092fb636f9a7ab139c7a2de4a786034df7b0ddbe21a6659ae64"
+    }
+  ]
+}

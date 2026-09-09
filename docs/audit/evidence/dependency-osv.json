@@ -1,0 +1,1455 @@
+{
+  "queried_at": "2026-09-09T09:07:20.294887+00:00",
+  "source": "https://api.osv.dev/v1/querybatch",
+  "kind": "version matches; reachability NOT established",
+  "packages": [
+    {
+      "name": "org.springframework.boot:spring-boot-starter-web",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-logging",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "ch.qos.logback:logback-classic",
+      "version": "1.4.14",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "ch.qos.logback:logback-core",
+      "version": "1.4.14",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-25qh-j22f-pwp8",
+          "modified": "2026-02-04T04:36:33.093619Z"
+        },
+        {
+          "id": "GHSA-6v67-2wr5-gvf4",
+          "modified": "2026-02-04T02:48:46.075919Z"
+        },
+        {
+          "id": "GHSA-jhq6-gfmj-v8fx",
+          "modified": "2026-07-15T22:00:52.732394Z"
+        },
+        {
+          "id": "GHSA-p47f-322f-whfh",
+          "modified": "2026-07-03T10:14:36.248327Z"
+        },
+        {
+          "id": "GHSA-pr98-23f8-jwxv",
+          "modified": "2026-02-04T04:15:26.157843Z"
+        },
+        {
+          "id": "GHSA-qqpg-mvqg-649v",
+          "modified": "2026-02-04T04:14:42.648926Z"
+        }
+      ]
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-to-slf4j",
+      "version": "2.21.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-api",
+      "version": "2.21.1",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-qv9r-c865-cp47",
+          "modified": "2026-08-14T21:42:02.007599Z"
+        }
+      ]
+    },
+    {
+      "name": "org.slf4j:jul-to-slf4j",
+      "version": "2.0.9",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "jakarta.annotation:jakarta.annotation-api",
+      "version": "2.1.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.yaml:snakeyaml",
+      "version": "2.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-json",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8",
+      "version": "2.15.3",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310",
+      "version": "2.15.3",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.fasterxml.jackson.module:jackson-module-parameter-names",
+      "version": "2.15.3",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-tomcat",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.apache.tomcat.embed:tomcat-embed-core",
+      "version": "10.1.17",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-23hv-mwm6-g8jf",
+          "modified": "2026-07-01T16:30:08.497253Z"
+        },
+        {
+          "id": "GHSA-25xr-qj8w-c4vf",
+          "modified": "2026-03-06T21:48:52.680071Z"
+        },
+        {
+          "id": "GHSA-27hp-xhwr-wr2m",
+          "modified": "2026-02-04T02:57:44.792035Z"
+        },
+        {
+          "id": "GHSA-3p2h-wqq4-wf4h",
+          "modified": "2026-02-04T02:33:55.411813Z"
+        },
+        {
+          "id": "GHSA-42wg-hm62-jcwg",
+          "modified": "2025-10-29T16:13:33.340454Z"
+        },
+        {
+          "id": "GHSA-563x-q5rq-57qp",
+          "modified": "2026-05-20T22:00:12.406423Z"
+        },
+        {
+          "id": "GHSA-5j33-cvvr-w245",
+          "modified": "2026-02-04T03:30:30.995863Z"
+        },
+        {
+          "id": "GHSA-5m62-pw8w-7w9f",
+          "modified": "2026-05-22T20:44:18.279901Z"
+        },
+        {
+          "id": "GHSA-5mp6-jrq3-r938",
+          "modified": "2026-05-19T20:44:22.991854Z"
+        },
+        {
+          "id": "GHSA-7jqf-v358-p8g7",
+          "modified": "2026-08-13T20:11:57.962107Z"
+        },
+        {
+          "id": "GHSA-7w75-32cg-r6g2",
+          "modified": "2026-08-13T20:11:57.589259Z"
+        },
+        {
+          "id": "GHSA-83qj-6fr2-vhqg",
+          "modified": "2026-02-04T03:48:01.024680Z"
+        },
+        {
+          "id": "GHSA-9m3c-qcxr-9x87",
+          "modified": "2026-04-16T22:29:16.890064Z"
+        },
+        {
+          "id": "GHSA-9m89-8frq-c98c",
+          "modified": "2026-05-22T20:44:17.940496Z"
+        },
+        {
+          "id": "GHSA-9xv2-5v5q-p794",
+          "modified": "2026-09-04T09:55:53.115347Z"
+        },
+        {
+          "id": "GHSA-ff77-26x5-69cr",
+          "modified": "2026-02-04T03:34:54.323619Z"
+        },
+        {
+          "id": "GHSA-fpj8-gq4v-p354",
+          "modified": "2026-08-31T23:15:08.369556Z"
+        },
+        {
+          "id": "GHSA-fv25-8xcx-gqjc",
+          "modified": "2026-05-19T20:44:23.671441Z"
+        },
+        {
+          "id": "GHSA-gcx9-497g-6cp6",
+          "modified": "2026-09-04T09:55:53.229009Z"
+        },
+        {
+          "id": "GHSA-gqp3-2cvr-x8m3",
+          "modified": "2026-05-13T16:35:26.549711Z"
+        },
+        {
+          "id": "GHSA-gx5v-xp9w-j4cg",
+          "modified": "2026-05-19T20:44:22.820021Z"
+        },
+        {
+          "id": "GHSA-h2fw-rfh5-95r3",
+          "modified": "2026-02-04T04:16:31.531863Z"
+        },
+        {
+          "id": "GHSA-h3gc-qfqq-6h8f",
+          "modified": "2026-02-04T02:50:56.702210Z"
+        },
+        {
+          "id": "GHSA-h3x4-894j-xpx5",
+          "modified": "2026-09-04T09:55:53.336793Z"
+        },
+        {
+          "id": "GHSA-h6fc-48rj-7qqh",
+          "modified": "2026-05-19T20:44:23.373407Z"
+        },
+        {
+          "id": "GHSA-hgrr-935x-pq79",
+          "modified": "2026-05-13T16:35:19.482075Z"
+        },
+        {
+          "id": "GHSA-mgp5-rv84-w37q",
+          "modified": "2026-03-20T17:59:02.946416Z"
+        },
+        {
+          "id": "GHSA-r29c-68gh-xp6x",
+          "modified": "2026-08-31T21:15:07.810761Z"
+        },
+        {
+          "id": "GHSA-rv64-5gf8-9qq8",
+          "modified": "2026-04-16T22:29:18.579217Z"
+        },
+        {
+          "id": "GHSA-vfww-5hm6-hx2j",
+          "modified": "2026-05-13T16:35:23.699719Z"
+        },
+        {
+          "id": "GHSA-wc4r-xq3c-5cf3",
+          "modified": "2026-02-04T03:34:56.351825Z"
+        },
+        {
+          "id": "GHSA-wm9w-rjj3-j356",
+          "modified": "2026-02-04T02:28:53.223858Z"
+        },
+        {
+          "id": "GHSA-wmwf-9ccg-fff5",
+          "modified": "2026-05-13T16:35:28.966681Z"
+        },
+        {
+          "id": "GHSA-wr62-c79q-cv37",
+          "modified": "2026-03-06T22:01:30.941844Z"
+        },
+        {
+          "id": "GHSA-x4m4-345f-5h5g",
+          "modified": "2026-08-12T19:00:09.834075Z"
+        }
+      ]
+    },
+    {
+      "name": "org.apache.tomcat.embed:tomcat-embed-websocket",
+      "version": "10.1.17",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-v682-8vv8-vpwr",
+          "modified": "2026-08-13T20:11:57.899831Z"
+        }
+      ]
+    },
+    {
+      "name": "org.springframework:spring-web",
+      "version": "6.1.2",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-2rmj-mq67-h97g",
+          "modified": "2026-02-04T03:41:13.020256Z"
+        },
+        {
+          "id": "GHSA-2wrp-6fg6-hmc5",
+          "modified": "2026-04-17T19:29:23.512712Z"
+        },
+        {
+          "id": "GHSA-4gc7-5j7h-4qph",
+          "modified": "2026-02-04T04:13:07.093622Z"
+        },
+        {
+          "id": "GHSA-6r3c-xf4w-jxjm",
+          "modified": "2026-02-04T03:21:42.385504Z"
+        },
+        {
+          "id": "GHSA-ccgv-vj62-xf9h",
+          "modified": "2026-02-04T03:35:25.288455Z"
+        },
+        {
+          "id": "GHSA-hgjh-9rj2-g67j",
+          "modified": "2026-02-04T02:37:54.422465Z"
+        }
+      ]
+    },
+    {
+      "name": "org.springframework:spring-beans",
+      "version": "6.1.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework:spring-webmvc",
+      "version": "6.1.2",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-3chg-m5w7-qfv5",
+          "modified": "2026-07-31T15:09:20.739235Z"
+        },
+        {
+          "id": "GHSA-4773-3jfm-qmx3",
+          "modified": "2026-03-26T18:29:19.494354Z"
+        },
+        {
+          "id": "GHSA-6hcq-hmm3-jj3c",
+          "modified": "2026-03-26T18:29:19.981865Z"
+        },
+        {
+          "id": "GHSA-6p4f-wcwh-5vvm",
+          "modified": "2026-05-08T02:14:22.486185Z"
+        },
+        {
+          "id": "GHSA-72pg-x5f8-j25j",
+          "modified": "2026-07-31T21:29:55.009504Z"
+        },
+        {
+          "id": "GHSA-957g-f97v-vppc",
+          "modified": "2026-07-31T21:29:55.388758Z"
+        },
+        {
+          "id": "GHSA-cjpg-rgq5-fr37",
+          "modified": "2026-07-31T15:09:20.558337Z"
+        },
+        {
+          "id": "GHSA-cx7f-g6mp-7hqm",
+          "modified": "2026-02-04T02:37:27.897336Z"
+        },
+        {
+          "id": "GHSA-g5vr-rgqm-vf78",
+          "modified": "2025-05-28T14:22:33Z"
+        },
+        {
+          "id": "GHSA-h3qp-gqrc-q736",
+          "modified": "2026-07-31T21:29:55.845479Z"
+        },
+        {
+          "id": "GHSA-mq64-j8f9-9gcj",
+          "modified": "2026-07-31T15:09:20.372410Z"
+        },
+        {
+          "id": "GHSA-r936-gwx5-v52f",
+          "modified": "2026-02-04T03:50:37.742858Z"
+        },
+        {
+          "id": "GHSA-wg35-8jpf-2xv3",
+          "modified": "2026-07-02T21:30:15.171179Z"
+        },
+        {
+          "id": "GHSA-x23c-287f-qqv5",
+          "modified": "2026-07-31T21:29:54.673636Z"
+        }
+      ]
+    },
+    {
+      "name": "org.springframework:spring-context",
+      "version": "6.1.2",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-4gc7-5j7h-4qph",
+          "modified": "2026-02-04T04:13:07.093622Z"
+        },
+        {
+          "id": "GHSA-4wp7-92pw-q264",
+          "modified": "2026-02-04T04:04:31.136084Z"
+        }
+      ]
+    },
+    {
+      "name": "org.springframework:spring-expression",
+      "version": "6.1.2",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-9f52-rjqv-25qv",
+          "modified": "2026-07-31T21:29:55.072503Z"
+        },
+        {
+          "id": "GHSA-r5w3-xv2f-j59q",
+          "modified": "2026-07-31T15:09:20.125259Z"
+        },
+        {
+          "id": "GHSA-wxpp-56q6-5pcg",
+          "modified": "2026-07-31T15:09:20.058920Z"
+        }
+      ]
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-data-jpa",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-aop",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.aspectj:aspectjweaver",
+      "version": "1.9.21",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-jdbc",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.zaxxer:HikariCP",
+      "version": "5.0.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework:spring-jdbc",
+      "version": "6.1.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.hibernate.orm:hibernate-core",
+      "version": "6.4.1.Final",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "jakarta.persistence:jakarta.persistence-api",
+      "version": "3.1.0",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "jakarta.transaction:jakarta.transaction-api",
+      "version": "2.0.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.jboss.logging:jboss-logging",
+      "version": "3.5.3.Final",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.hibernate.common:hibernate-commons-annotations",
+      "version": "6.0.6.Final",
+      "scope": "runtime",
+      "advisories": []
+    },
+    {
+      "name": "io.smallrye:jandex",
+      "version": "3.1.2",
+      "scope": "runtime",
+      "advisories": []
+    },
+    {
+      "name": "com.fasterxml:classmate",
+      "version": "1.6.0",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.glassfish.jaxb:jaxb-runtime",
+      "version": "4.0.4",
+      "scope": "runtime",
+      "advisories": []
+    },
+    {
+      "name": "org.glassfish.jaxb:jaxb-core",
+      "version": "4.0.4",
+      "scope": "runtime",
+      "advisories": []
+    },
+    {
+      "name": "org.glassfish.jaxb:txw2",
+      "version": "4.0.4",
+      "scope": "runtime",
+      "advisories": []
+    },
+    {
+      "name": "com.sun.istack:istack-commons-runtime",
+      "version": "4.1.2",
+      "scope": "runtime",
+      "advisories": []
+    },
+    {
+      "name": "jakarta.inject:jakarta.inject-api",
+      "version": "2.0.1",
+      "scope": "runtime",
+      "advisories": []
+    },
+    {
+      "name": "org.antlr:antlr4-runtime",
+      "version": "4.13.0",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.data:spring-data-jpa",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.data:spring-data-commons",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-5m4m-73w9-8433",
+          "modified": "2026-08-22T21:26:54.454745Z"
+        },
+        {
+          "id": "GHSA-5vpf-xvv7-c8vh",
+          "modified": "2026-08-22T21:26:55.060210Z"
+        }
+      ]
+    },
+    {
+      "name": "org.springframework:spring-orm",
+      "version": "6.1.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework:spring-tx",
+      "version": "6.1.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.slf4j:slf4j-api",
+      "version": "2.0.9",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework:spring-aspects",
+      "version": "6.1.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-security",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework:spring-aop",
+      "version": "6.1.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.security:spring-security-config",
+      "version": "6.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.security:spring-security-web",
+      "version": "6.2.1",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-293q-567p-wmwq",
+          "modified": "2026-07-02T19:59:25.956020Z"
+        },
+        {
+          "id": "GHSA-c4q5-6c82-3qpw",
+          "modified": "2026-08-31T23:00:10.104056Z"
+        },
+        {
+          "id": "GHSA-mf92-479x-3373",
+          "modified": "2026-03-25T19:59:15.827722Z"
+        }
+      ]
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-validation",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.apache.tomcat.embed:tomcat-embed-el",
+      "version": "10.1.17",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.hibernate.validator:hibernate-validator",
+      "version": "8.0.1.Final",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "jakarta.validation:jakarta.validation-api",
+      "version": "3.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-data-redis",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.lettuce:lettuce-core",
+      "version": "6.3.0.RELEASE",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.netty:netty-common",
+      "version": "4.1.104.Final",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-389x-839f-4rhx",
+          "modified": "2026-02-04T04:31:00.174857Z"
+        },
+        {
+          "id": "GHSA-xq3w-v528-46rv",
+          "modified": "2026-02-04T03:40:54.362888Z"
+        }
+      ]
+    },
+    {
+      "name": "io.netty:netty-handler",
+      "version": "4.1.104.Final",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-3qp7-7mw8-wx86",
+          "modified": "2026-06-12T19:30:08.471567Z"
+        },
+        {
+          "id": "GHSA-4g8c-wm8x-jfhw",
+          "modified": "2026-02-04T02:54:33.253775Z"
+        },
+        {
+          "id": "GHSA-c4c3-7fpv-j4q5",
+          "modified": "2026-09-08T18:27:48.571082Z"
+        },
+        {
+          "id": "GHSA-c653-97m9-rcg9",
+          "modified": "2026-06-16T15:44:21.668164Z"
+        },
+        {
+          "id": "GHSA-fccg-mwvh-qqg4",
+          "modified": "2026-09-08T18:27:48.113951Z"
+        },
+        {
+          "id": "GHSA-x4gw-5cx5-pgmh",
+          "modified": "2026-06-12T19:45:13.007385Z"
+        }
+      ]
+    },
+    {
+      "name": "io.netty:netty-resolver",
+      "version": "4.1.104.Final",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.netty:netty-buffer",
+      "version": "4.1.104.Final",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.netty:netty-transport-native-unix-common",
+      "version": "4.1.104.Final",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.netty:netty-codec",
+      "version": "4.1.104.Final",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-3p8m-j85q-pgmj",
+          "modified": "2026-02-04T02:23:33.973208Z"
+        },
+        {
+          "id": "GHSA-558v-64gr-wgg4",
+          "modified": "2026-07-23T22:29:34.272229Z"
+        },
+        {
+          "id": "GHSA-mj4r-2hfc-f8p6",
+          "modified": "2026-05-14T20:52:02.730912Z"
+        }
+      ]
+    },
+    {
+      "name": "io.netty:netty-transport",
+      "version": "4.1.104.Final",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.projectreactor:reactor-core",
+      "version": "3.6.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.reactivestreams:reactive-streams",
+      "version": "1.0.4",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.data:spring-data-redis",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.data:spring-data-keyvalue",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-xg2j-3hj6-pc24",
+          "modified": "2026-08-22T21:26:54.790860Z"
+        }
+      ]
+    },
+    {
+      "name": "org.springframework:spring-oxm",
+      "version": "6.1.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-actuator",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-mgvc-8q2h-5pgc",
+          "modified": "2026-04-01T15:44:18.344622Z"
+        }
+      ]
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-actuator-autoconfigure",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-actuator",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.micrometer:micrometer-observation",
+      "version": "1.12.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.micrometer:micrometer-commons",
+      "version": "1.12.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.micrometer:micrometer-jakarta9",
+      "version": "1.12.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.micrometer:micrometer-core",
+      "version": "1.12.1",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-g3pr-3p32-fp23",
+          "modified": "2026-09-02T15:45:33.066755Z"
+        }
+      ]
+    },
+    {
+      "name": "org.hdrhistogram:HdrHistogram",
+      "version": "2.1.12",
+      "scope": "runtime",
+      "advisories": []
+    },
+    {
+      "name": "org.latencyutils:LatencyUtils",
+      "version": "2.0.3",
+      "scope": "runtime",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-mail",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework:spring-context-support",
+      "version": "6.1.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.eclipse.angus:jakarta.mail",
+      "version": "2.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "jakarta.activation:jakarta.activation-api",
+      "version": "2.1.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.eclipse.angus:angus-activation",
+      "version": "2.0.1",
+      "scope": "runtime",
+      "advisories": []
+    },
+    {
+      "name": "org.postgresql:postgresql",
+      "version": "42.6.0",
+      "scope": "runtime",
+      "advisories": [
+        {
+          "id": "GHSA-24rp-q3w6-vc56",
+          "modified": "2026-07-08T06:27:05.655190Z"
+        },
+        {
+          "id": "GHSA-98qh-xjc8-98pq",
+          "modified": "2026-05-06T20:44:10.284941Z"
+        }
+      ]
+    },
+    {
+      "name": "org.checkerframework:checker-qual",
+      "version": "3.31.0",
+      "scope": "runtime",
+      "advisories": []
+    },
+    {
+      "name": "org.flywaydb:flyway-core",
+      "version": "9.22.3",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.fasterxml.jackson.dataformat:jackson-dataformat-toml",
+      "version": "2.15.3",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.fasterxml.jackson.core:jackson-core",
+      "version": "2.15.3",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-72hv-8253-57qq",
+          "modified": "2026-09-03T02:10:52.406064Z"
+        },
+        {
+          "id": "GHSA-r7wm-3cxj-wff9",
+          "modified": "2026-08-05T03:41:57.338106Z"
+        }
+      ]
+    },
+    {
+      "name": "com.google.code.gson:gson",
+      "version": "2.10.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.jsonwebtoken:jjwt-api",
+      "version": "0.12.3",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.jsonwebtoken:jjwt-impl",
+      "version": "0.12.3",
+      "scope": "runtime",
+      "advisories": []
+    },
+    {
+      "name": "io.jsonwebtoken:jjwt-jackson",
+      "version": "0.12.3",
+      "scope": "runtime",
+      "advisories": []
+    },
+    {
+      "name": "com.fasterxml.jackson.core:jackson-databind",
+      "version": "2.15.3",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-3pjw-73gf-8qr5",
+          "modified": "2026-07-25T03:29:37.657238Z"
+        },
+        {
+          "id": "GHSA-5jmj-h7xm-6q6v",
+          "modified": "2026-07-16T21:30:21.943601Z"
+        },
+        {
+          "id": "GHSA-hgj6-7826-r7m5",
+          "modified": "2026-07-20T21:30:31.809711Z"
+        },
+        {
+          "id": "GHSA-j3rv-43j4-c7qm",
+          "modified": "2026-07-20T21:30:40.174709Z"
+        },
+        {
+          "id": "GHSA-rmj7-2vxq-3g9f",
+          "modified": "2026-09-02T15:45:20.112407Z"
+        }
+      ]
+    },
+    {
+      "name": "com.fasterxml.jackson.core:jackson-annotations",
+      "version": "2.15.3",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springdoc:springdoc-openapi-starter-webmvc-ui",
+      "version": "2.3.0",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springdoc:springdoc-openapi-starter-webmvc-api",
+      "version": "2.3.0",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springdoc:springdoc-openapi-starter-common",
+      "version": "2.3.0",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.swagger.core.v3:swagger-core-jakarta",
+      "version": "2.2.19",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.swagger.core.v3:swagger-annotations-jakarta",
+      "version": "2.2.19",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "io.swagger.core.v3:swagger-models-jakarta",
+      "version": "2.2.19",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml",
+      "version": "2.15.3",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.webjars:swagger-ui",
+      "version": "5.10.3",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.stripe:stripe-java",
+      "version": "24.0.0",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.itextpdf:itext-core",
+      "version": "8.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.itextpdf:barcodes",
+      "version": "8.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.itextpdf:font-asian",
+      "version": "8.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.itextpdf:forms",
+      "version": "8.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.itextpdf:hyph",
+      "version": "8.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.itextpdf:io",
+      "version": "8.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.itextpdf:commons",
+      "version": "8.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.itextpdf:kernel",
+      "version": "8.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.itextpdf:layout",
+      "version": "8.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.itextpdf:pdfa",
+      "version": "8.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.itextpdf:sign",
+      "version": "8.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.itextpdf:styled-xml-parser",
+      "version": "8.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.itextpdf:svg",
+      "version": "8.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.itextpdf:bouncy-castle-connector",
+      "version": "8.0.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.cloudinary:cloudinary-http45",
+      "version": "1.36.0",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "com.cloudinary:cloudinary-core",
+      "version": "1.36.0",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.apache.commons:commons-lang3",
+      "version": "3.13.0",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-j288-q9x7-2f5v",
+          "modified": "2026-02-04T03:18:02.851501Z"
+        }
+      ]
+    },
+    {
+      "name": "org.apache.httpcomponents:httpclient",
+      "version": "4.5.13",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.apache.httpcomponents:httpcore",
+      "version": "4.4.16",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "commons-logging:commons-logging",
+      "version": "1.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "commons-codec:commons-codec",
+      "version": "1.16.0",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.apache.httpcomponents:httpmime",
+      "version": "4.5.13",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.mapstruct:mapstruct",
+      "version": "1.5.5.Final",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.projectlombok:lombok",
+      "version": "1.18.30",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-devtools",
+      "version": "3.2.1",
+      "scope": "runtime",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-rc42-6c7j-7h5r",
+          "modified": "2026-02-04T02:35:01.941827Z"
+        }
+      ]
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-autoconfigure",
+      "version": "3.2.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-test",
+      "version": "3.2.1",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-test",
+      "version": "3.2.1",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-test-autoconfigure",
+      "version": "3.2.1",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "com.jayway.jsonpath:json-path",
+      "version": "2.8.0",
+      "scope": "test",
+      "advisories": [
+        {
+          "id": "GHSA-pfh2-hfmq-phg5",
+          "modified": "2026-02-04T04:31:57.310292Z"
+        }
+      ]
+    },
+    {
+      "name": "jakarta.xml.bind:jakarta.xml.bind-api",
+      "version": "4.0.1",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "net.minidev:json-smart",
+      "version": "2.5.0",
+      "scope": "test",
+      "advisories": [
+        {
+          "id": "GHSA-pq2g-wx69-c263",
+          "modified": "2026-02-04T02:59:43.040937Z"
+        }
+      ]
+    },
+    {
+      "name": "net.minidev:accessors-smart",
+      "version": "2.5.0",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.ow2.asm:asm",
+      "version": "9.3",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.assertj:assertj-core",
+      "version": "3.24.2",
+      "scope": "test",
+      "advisories": [
+        {
+          "id": "GHSA-rqfh-9r24-8c9r",
+          "modified": "2026-02-03T03:04:53.356771Z"
+        }
+      ]
+    },
+    {
+      "name": "org.awaitility:awaitility",
+      "version": "4.2.0",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.hamcrest:hamcrest",
+      "version": "2.2",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.junit.jupiter:junit-jupiter",
+      "version": "5.10.1",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.junit.jupiter:junit-jupiter-api",
+      "version": "5.10.1",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.opentest4j:opentest4j",
+      "version": "1.3.0",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.junit.platform:junit-platform-commons",
+      "version": "1.10.1",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.apiguardian:apiguardian-api",
+      "version": "1.1.2",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.junit.jupiter:junit-jupiter-params",
+      "version": "5.10.1",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.junit.jupiter:junit-jupiter-engine",
+      "version": "5.10.1",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.junit.platform:junit-platform-engine",
+      "version": "1.10.1",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.mockito:mockito-junit-jupiter",
+      "version": "5.7.0",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.skyscreamer:jsonassert",
+      "version": "1.5.1",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "com.vaadin.external.google:android-json",
+      "version": "0.0.20131108.vaadin1",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework:spring-core",
+      "version": "6.1.2",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-659m-px2c-25wj",
+          "modified": "2026-07-31T21:29:55.714931Z"
+        },
+        {
+          "id": "GHSA-jmp9-x22r-554x",
+          "modified": "2026-02-04T02:59:53.509459Z"
+        },
+        {
+          "id": "GHSA-r4q3-7g4q-x89m",
+          "modified": "2026-08-07T08:12:32.517201Z"
+        }
+      ]
+    },
+    {
+      "name": "org.springframework:spring-jcl",
+      "version": "6.1.2",
+      "scope": "compile",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework:spring-test",
+      "version": "6.1.2",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.xmlunit:xmlunit-core",
+      "version": "2.9.1",
+      "scope": "test",
+      "advisories": [
+        {
+          "id": "GHSA-chfm-68vv-pvw5",
+          "modified": "2024-12-05T05:28:04.518630Z"
+        }
+      ]
+    },
+    {
+      "name": "org.mockito:mockito-core",
+      "version": "5.11.0",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "net.bytebuddy:byte-buddy-agent",
+      "version": "1.14.10",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.objenesis:objenesis",
+      "version": "3.3",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "net.bytebuddy:byte-buddy",
+      "version": "1.14.18",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.security:spring-security-test",
+      "version": "6.2.1",
+      "scope": "test",
+      "advisories": []
+    },
+    {
+      "name": "org.springframework.security:spring-security-core",
+      "version": "6.2.1",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-f3jh-qvm4-mg39",
+          "modified": "2026-02-04T03:05:25.970671Z"
+        },
+        {
+          "id": "GHSA-q3v6-hm2v-pw99",
+          "modified": "2026-02-04T03:10:40.993970Z"
+        },
+        {
+          "id": "GHSA-w3w6-26f2-p474",
+          "modified": "2025-02-13T19:36:07.721740Z"
+        }
+      ]
+    },
+    {
+      "name": "org.springframework.security:spring-security-crypto",
+      "version": "6.2.1",
+      "scope": "compile",
+      "advisories": [
+        {
+          "id": "GHSA-mg83-c7gq-rv5c",
+          "modified": "2026-02-04T02:24:34.415323Z"
+        }
+      ]
+    },
+    {
+      "name": "com.h2database:h2",
+      "version": "2.2.224",
+      "scope": "test",
+      "advisories": []
+    }
+  ]
+}

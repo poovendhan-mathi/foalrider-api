@@ -1,6 +1,8 @@
 # 🐎 FoalRider API
 
-A production-grade Spring Boot backend for a clothing e-commerce platform.
+A Spring Boot backend for a clothing e-commerce platform.
+
+**Production-readiness review (2026-09-09):** critical payment and security issues remain open. See the [audit overview](docs/audit/README.md), [implementation plan](docs/audit/IMPLEMENTATION_PLAN.md), and [progress tracker](docs/audit/PROGRESS_TRACKER.md) before deploying or accepting real payments. Historical test reports below do not establish current production readiness.
 
 ## 🛠 Technology Stack
 
